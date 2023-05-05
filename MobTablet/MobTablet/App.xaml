@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+              xmlns:local="clr-namespace:MobTablet.CustomControls"
+             xmlns:control="clr-namespace:ProgressRingControl.Forms.Plugin;assembly=ProgressRing.Forms.Plugin"
+             x:Class="MobTablet.App">
+    <Application.Resources>
+        <LinearGradientBrush x:Key="mainGradient" StartPoint="0.5,0" EndPoint="0.5,1">
+            <GradientStop Color="#F7F7FF" Offset="0"/>
+            <GradientStop Color="#BAB3FD" Offset="1"/>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="popupGradient" StartPoint="0.5,0" EndPoint="0.5,1">
+            <GradientStop Color="#F9F9FF" Offset="0"/>
+            <GradientStop Color="#E4E1FF" Offset="1"/>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="blockGradient" StartPoint="0.5,0" EndPoint="0.5,1">
+            <GradientStop Color="#F9F9FF" Offset="0"/>
+            <GradientStop Color="#F2F1FF" Offset="1"/>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="blueGradient" StartPoint="0.5,0" EndPoint="0.5,1" >
+            <GradientStop Color="#7B6FFF" Offset="0"/>
+            <GradientStop Color="#5242FF" Offset="1"/>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="greenGradient" StartPoint="0.5,0" EndPoint="0.5,1" >
+            <GradientStop Color="#26E27C" Offset="0"/>
+            <GradientStop Color="#15D36C" Offset="1"/>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="redGradient" StartPoint="0.5,0" EndPoint="0.5,1" >
+            <GradientStop Color="#FF89BB" Offset="0"/>
+            <GradientStop Color="#FF1D45" Offset="1"/>
+        </LinearGradientBrush>
+
+        <Style x:Key="menuButtonStyle" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#E1DFFE" />
+            <Setter Property="TextColor" Value="#524E7D" />
+            <Setter Property="FontFamily" Value="noto_sans_regular" />
+            <Setter Property="TextTransform" Value="None"/>
+            <Style.Triggers>
+                <Trigger TargetType="Button" Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="{StaticResource blueGradient}" />
+                    <Setter Property="TextColor" Value="White" />
+                </Trigger>
+                <Trigger TargetType="Button" Property="IsFocused" Value="True">
+                    <Setter Property="Background" Value="{StaticResource blueGradient}" />
+                    <Setter Property="TextColor" Value="White" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+
+        <Style x:Key="RegularText" TargetType="Label">
+            <Setter Property="TextColor" Value="#1E1584" />
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="FontFamily" Value="noto_sans_regular" />
+        </Style>
+
+        <Style x:Key="MediumText" TargetType="Label">
+            <Setter Property="TextColor" Value="#1E1584" />
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="FontFamily" Value="noto_sans_medium" />
+        </Style>
+
+        <Style x:Key="BoldText" TargetType="Label">
+            <Setter Property="TextColor" Value="#1E1584" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontFamily" Value="noto_sans_bold" />
+        </Style>
+
+        <Style x:Key="LightText" TargetType="Label">
+            <Setter Property="TextColor" Value="#1E1584" />
+            <Setter Property="FontSize" Value="14" />
+            <Setter Property="FontFamily" Value="noto_sans_light" />
+        </Style>
+
+        <Style x:Key="menuBtn" TargetType="local:MenuButton">
+            <Setter Property="VisualStateManager.VisualStateGroups">
+                <VisualStateGroupList>
+                    <VisualStateGroup x:Name="CommonStates">
+                        <VisualState x:Name="Normal" >
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" Value="#E1DFFE" />
+                            </VisualState.Setters>
+                        </VisualState>
+                        <VisualState x:Name="Pressed">
+                            <VisualState.Setters>
+                                <Setter Property="BackgroundColor" Value="#5242FF" />
+                                <Setter Property="Background" Value="{StaticResource blueGradient}" />
+                            </VisualState.Setters>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateGroupList>
+            </Setter>
+        </Style>
+
+        <DataTemplate x:Key="profileMessageList">
+            <ViewCell>
+                <ViewCell.View>
+                    <StackLayout BackgroundColor="Transparent" Orientation="Horizontal" Margin="20" Padding="0">
+                        <Image Source="Avatar.png" Grid.RowSpan="2" WidthRequest="64" HeightRequest="64"/>
+                        <StackLayout VerticalOptions="Center" Margin="5, 0, 0, 0">
+                            <Label Text="{Binding FIO}" Style="{StaticResource BoldText}" FontSize="16" />
+                            <Label  Text="{Binding Message}" FontAttributes="Bold" FontFamily="noto_sans_regular" VerticalTextAlignment="Center"/>
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="Center">
+                            <Image IsVisible="{Binding isIdea}" Source="idea" />
+                            <Frame IsVisible="{Binding isUnread}" CornerRadius="100" Background="{StaticResource redGradient}" HorizontalOptions="Center" WidthRequest="24" HeightRequest="24" Padding="0">
+                                <Label Text="1" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Style="{StaticResource MediumText}"/>
+                            </Frame>
+                            <Label Text="Вчера"/>
+                        </StackLayout>
+                    </StackLayout>
+                </ViewCell.View>
+            </ViewCell>
+        </DataTemplate>
+        
+        <DataTemplate x:Key="mainTable">
+            <ViewCell>
+                <ViewCell.View>
+                    <Frame BackgroundColor="#ECEBFF" CornerRadius="12" Margin="0, 0, 0, 12" HasShadow="False">
+                        <StackLayout>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="80" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Frame IsVisible="{Binding isCounter}" Grid.Column="0" Margin="0" Padding="0" BackgroundColor="Transparent">
+                                    <Frame Margin="0" Padding="0" HeightRequest="40" WidthRequest="40" CornerRadius="12" Background="{StaticResource blueGradient}" HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Label Style="{StaticResource BoldText}" FontSize="20" Text="{Binding ID}" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                                    </Frame>
+                                </Frame>
+
+                                <Frame IsVisible="{Binding isSuccess}" Grid.Column="0" Margin="0" Padding="0" BackgroundColor="Transparent">
+                                    <Frame Margin="0" Padding="0" HeightRequest="40" WidthRequest="40" CornerRadius="12" Background="{StaticResource greenGradient}" HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Image Source="success" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    </Frame>
+                                </Frame>
+
+                                <Frame IsVisible="{Binding isFailed}" Grid.Column="0" Margin="0" Padding="0" BackgroundColor="Transparent">
+                                    <Frame Margin="0" Padding="0" HeightRequest="40" WidthRequest="40" CornerRadius="12" Background="{StaticResource redGradient}" HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Image Source="close_white" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    </Frame>
+                                </Frame>
+
+                                <Frame IsVisible="{Binding isFire}" Grid.Column="0" Margin="0" Padding="0" BackgroundColor="Transparent">
+                                    <Frame Margin="0" Padding="0" HeightRequest="40" WidthRequest="40" CornerRadius="12" BackgroundColor="#d5d1fe" HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Image Source="fire" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    </Frame>
+                                </Frame>
+
+                                <Label Text="{Binding Detail}" Style="{StaticResource RegularText}" FontSize="16" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+                                <StackLayout VerticalOptions="Center" Grid.Column="2">
+                                    <Grid HorizontalOptions="Center">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Source="small_coin.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
+                                        <Label Text="{Binding Path=Coin,StringFormat='+ {0}'}" Style="{StaticResource BoldText}" FontSize="20" Grid.Column="1" VerticalOptions="Center"/>
+                                    </Grid>
+
+                                    <!-- Вторая строка -->
+                                    <Grid HorizontalOptions="Center">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Image Source="small_karma.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
+                                        <Label Text="{Binding Path=Karma,StringFormat='+ {0}'}" Style="{StaticResource BoldText}" FontSize="20" Grid.Column="1" VerticalOptions="Center"/>
+                                    </Grid>
+                                </StackLayout>
+
+                                <Grid Grid.Column="3" VerticalOptions="CenterAndExpand">
+                                    <control:ProgressRing WidthRequest="90" HeightRequest="90" RingProgressColor="{Binding progressColor}" RingBaseColor="White" Progress="{Binding Progress}"/>
+                                    <StackLayout VerticalOptions="CenterAndExpand">
+                                        <Label VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource RegularText}" FontSize="14" Text="{Binding Path=Progress,StringFormat='{0} / 1'}"/>
+                                    </StackLayout>
+                                </Grid>
+
+                                <Label Text="{Binding Time}" Grid.Column="4" HorizontalTextAlignment="Center" Style="{StaticResource RegularText}" FontSize="16" VerticalTextAlignment="Center"/>
+                            </Grid>
+                            <StackLayout IsVisible="{Binding isFire}" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Spacing="32" Margin="0, 20, 0, 0">
+                                <Button Text="Читать описание" FontFamily="noto_sans_regular" TextTransform="None" CornerRadius="12" HorizontalOptions="FillAndExpand" Background="{StaticResource blockGradient}" />
+                                <Button Text="Принять" FontFamily="noto_sans_regular" TextTransform="None" CornerRadius="12" HorizontalOptions="FillAndExpand" Background="{StaticResource greenGradient}" /> 
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </ViewCell.View>
+            </ViewCell>
+        </DataTemplate>
+
+        <DataTemplate x:Key="raitingTable">
+            <ViewCell>
+                <ViewCell.View>
+                    <Frame BackgroundColor="#E1DFFE" CornerRadius="12" Margin="0, 0, 0, 12" HasShadow="False">
+                        <Grid >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <AbsoluteLayout Padding="0" Margin="0">
+                                <Image Source="Avatar" Grid.Column="0" WidthRequest="70" HeightRequest="70"/>
+                                <Image Source="{Binding notifi}" AbsoluteLayout.LayoutBounds="0.9,-0.1,24,24" AbsoluteLayout.LayoutFlags="PositionProportional" WidthRequest="24" HeightRequest="24"/>
+                            </AbsoluteLayout>
+                            <Label Text="{Binding FIO}" Style="{StaticResource RegularText}" FontSize="16" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                            <Label Text="{Binding Position}" Style="{StaticResource RegularText}" FontSize="16" Grid.Column="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                            <Label Text="{Binding Address}" Style="{StaticResource RegularText}" FontSize="16" Grid.Column="3" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                            <Label Text="{Binding Path=level,StringFormat='{0} уровень'}" Style="{StaticResource RegularText}" FontSize="16" Grid.Column="4" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                            <Label Text="{Binding Coin}" Style="{StaticResource RegularText}" FontSize="16" Grid.Column="5" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                            <Label Text="{Binding Karma}" Style="{StaticResource RegularText}" FontSize="16" Grid.Column="6" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                            <Label Text="{Binding Karma_Total}" Style="{StaticResource RegularText}" FontSize="16" Grid.Column="7" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        </Grid>
+                    </Frame>
+                </ViewCell.View>
+            </ViewCell>
+        </DataTemplate>
+
+
+    </Application.Resources>
+</Application>

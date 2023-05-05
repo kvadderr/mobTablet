@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xct:Popup xmlns="http://xamarin.com/schemas/2014/forms"
+           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+           xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+           xmlns:control="clr-namespace:ProgressRingControl.Forms.Plugin;assembly=ProgressRing.Forms.Plugin"
+           Size="600, 400"
+           Color="Transparent"
+           x:Class="MobTablet.Popups.PopupEmpty">
+    <Frame CornerRadius="12" Padding="0" Background="{StaticResource popupGradient}">
+        <ScrollView  >
+            <StackLayout Spacing="50" Padding="100, 50, 100, 50" >
+                <ImageButton HorizontalOptions="End" Source="close" BorderWidth="1" BorderColor="#1E1584" CornerRadius="180" Padding="35, 18, 35, 18" BackgroundColor="Transparent"/>
+
+                <Label Text="У тебя пока нет заказов:" HorizontalTextAlignment="Center"  HorizontalOptions="Center" Style="{StaticResource MediumText}" FontSize="20" />
+                <Image Source="Empty" HorizontalOptions="Center"/>
+
+            </StackLayout>
+        </ScrollView>
+    </Frame>
+</xct:Popup>

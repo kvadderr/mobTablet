@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MobTablet.CustomControls"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="MobTablet.MainPage">
+
+    <StackLayout Background="{StaticResource mainGradient}">
+        <Frame Padding="24" CornerRadius="0" BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" >
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="StartAndExpand" Spacing="20">
+                    <ImageButton Source="back" BorderWidth="1" BorderColor="#1E1584" CornerRadius="180" Padding="35, 18, 35, 18" BackgroundColor="Transparent"/>
+                    <Label Text="Назад" Style="{StaticResource RegularText}" FontSize="16" VerticalOptions="Center"/>
+                </StackLayout>
+                <Label Text="Профиль" Style="{StaticResource BoldText}" FontSize="20" HorizontalOptions="CenterAndExpand"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                    <ImageButton Clicked="ImageButton_Clicked_1" BackgroundColor="#5242FF" CornerRadius="12" Background="{StaticResource blueGradient}" Source="mail" Padding="20, 14, 20, 14"/>
+                    <ImageButton Clicked="ImageButton_Clicked_2" BackgroundColor="#5242FF" CornerRadius="12" Background="{StaticResource blueGradient}" Source="mail" Padding="20, 14, 20, 14"/>
+                    <AbsoluteLayout Padding="0" Margin="0">
+                        <ImageButton Clicked="ImageButton_Clicked" BackgroundColor="#5242FF" CornerRadius="12" Background="{StaticResource blueGradient}" Source="sms" Padding="20, 14, 20, 14"/>
+                        <Frame AbsoluteLayout.LayoutBounds="1.2,-0.3,24,24" CornerRadius="50" Padding="0" AbsoluteLayout.LayoutFlags="PositionProportional" WidthRequest="24" HeightRequest="24" Background="{StaticResource redGradient}">
+                            <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="1" Style="{StaticResource MediumText}" TextColor="White"/>
+                        </Frame>
+                    </AbsoluteLayout>
+                </StackLayout>
+                
+            </StackLayout>
+        </Frame>
+
+        <Grid VerticalOptions="FillAndExpand" Margin="0,0,0,20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="3*" />
+            </Grid.ColumnDefinitions>
+            <Frame Grid.Column="0" VerticalOptions="FillAndExpand" Margin="20, 0, 20, 0" Background="{StaticResource blockGradient}" CornerRadius="12" HasShadow="False" >
+                <StackLayout Spacing="30">
+                
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="Avatar.png" Grid.RowSpan="2" WidthRequest="86" HeightRequest="86"/>
+                        <StackLayout VerticalOptions="Center" Margin="10, 0, 0, 0">
+                            <Label Text="Мария Иванова, 21 год" Style="{StaticResource BoldText}" FontSize="16" />
+                            <Label Text="Официант" FontAttributes="Bold" FontFamily="noto_sans_regular" VerticalTextAlignment="Center"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Center">
+                        <Label Text="1 уровень" FontSize="20" Style="{StaticResource BoldText}" />
+                        <BoxView WidthRequest="1"  Color="#524E7D" VerticalOptions="FillAndExpand" />
+                        <Image Source="small_coin.png" />
+                        <Label Text="1346" FontSize="20" Style="{StaticResource BoldText}" />
+                        
+                    </StackLayout>
+
+                    <StackLayout x:Name="MenuStackLayout" Orientation="Vertical" Spacing="14" >
+                        <local:MenuButton ImageSource="chart.xml" LabelText="Главная" Padding="0" HasShadow="False" Background="{StaticResource blueGradient}">
+                            <local:MenuButton.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="goToHome"/>
+                            </local:MenuButton.GestureRecognizers>
+                        </local:MenuButton>
+                        <local:MenuButton x:Name="profileBtn" ImageSource="user.xml" Padding="0" LabelText="Профиль" HeightRequest="58" LabelTextSize="14">
+                            <local:MenuButton.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="goToProfile"/>
+                            </local:MenuButton.GestureRecognizers>
+                        </local:MenuButton>
+                        <local:MenuButton ImageSource="user.xml" Padding="0" LabelText="Достижения">
+                            <local:MenuButton.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="goToAchievements"/>
+                            </local:MenuButton.GestureRecognizers>
+                        </local:MenuButton>
+                        <local:MenuButton ImageSource="user.xml" Padding="0" LabelText="Рейтинг">
+                            <local:MenuButton.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="goToRaiting"/>
+                            </local:MenuButton.GestureRecognizers>
+                        </local:MenuButton>
+                        <local:MenuButton ImageSource="user.xml" Padding="0" LabelText="Тестирование">
+                            <local:MenuButton.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="goToTest"/>
+                            </local:MenuButton.GestureRecognizers>
+                        </local:MenuButton>
+                        <local:MenuButton ImageSource="user.xml" Padding="0" LabelText="Библиотека">
+                            <local:MenuButton.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="goToLibrary"/>
+                            </local:MenuButton.GestureRecognizers>
+                        </local:MenuButton>
+                        <local:MenuButton ImageSource="user.xml" LabelText="Магазин">
+                            <local:MenuButton.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="goToShop"/>
+                            </local:MenuButton.GestureRecognizers>
+                        </local:MenuButton>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            <Frame x:Name="myFrameMain" Grid.Column="1" Padding="0"  BackgroundColor="Transparent"/>
+           
+        </Grid>
+
+    </StackLayout>
+
+</ContentPage>

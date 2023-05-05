@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "dgSpecHash": "dfLTvS0QFr8KL8coaz/S7kTfV1Hjy2t/D4tG1np8OGa8HRdTBAzH5U8YTE0/ml/+XAPL4c8Aj6bA9wBJMzog9w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Msoul\\source\\repos\\MobTablet\\MobTablet\\MobTablet\\MobTablet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Msoul\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Msoul\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\Msoul\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Msoul\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\Msoul\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Msoul\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.7.0\\system.reflection.emit.ilgeneration.4.7.0.nupkg.sha512",
+    "C:\\Users\\Msoul\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
+    "C:\\Users\\Msoul\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\Msoul\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
+    "C:\\Users\\Msoul\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\Msoul\\.nuget\\packages\\xam.plugins.forms.progressring\\0.1.2\\xam.plugins.forms.progressring.0.1.2.nupkg.sha512",
+    "C:\\Users\\Msoul\\.nuget\\packages\\xamarin.communitytoolkit\\2.0.6\\xamarin.communitytoolkit.2.0.6.nupkg.sha512",
+    "C:\\Users\\Msoul\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Msoul\\.nuget\\packages\\xamarin.forms\\5.0.0.2291\\xamarin.forms.5.0.0.2291.nupkg.sha512",
+    "C:\\Users\\Msoul\\.nuget\\packages\\xamarin.forms.pancakeview\\2.3.0.759\\xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"Xam.Plugins.Forms.ProgressRing 0.1.2\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \".NETStandard,Version=v2.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "Xam.Plugins.Forms.ProgressRing",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
+}

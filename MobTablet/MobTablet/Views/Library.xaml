@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobTablet.Views.Library">
+  <ContentView.Content>
+        <StackLayout Spacing="32" Orientation="Vertical" Margin="0, 0, 20, 0">
+            <Label Text="Библиотека" Style="{StaticResource BoldText}" FontSize="40" Margin="28, 0, 0, 0" />
+            <StackLayout Orientation="Horizontal" Spacing="20"  Margin="28, 0, 0, 0">
+                <Button Text="Про кофе" FontSize="Body" Background="{StaticResource blueGradient}" TextTransform="None"  TextColor="White" CornerRadius="12" FontFamily="noto_sans_regular"/>
+                <Button Text="О компании" FontSize="Body" Style="{StaticResource menuButtonStyle}" TextTransform="None" CornerRadius="12"/>
+                <Button Text="Онбординг" FontSize="Body" Style="{StaticResource menuButtonStyle}" TextTransform="None" CornerRadius="12"/>
+            </StackLayout>
+            <Frame x:Name="LibraryFrame" CornerRadius="12" Background="{StaticResource blockGradient}" Padding="0" HasShadow="False" VerticalOptions="FillAndExpand">
+                <ScrollView Padding="0, 0, 0, 20">
+                    <Grid RowSpacing="0" ColumnSpacing="20" Margin="25">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <StackLayout  Grid.Column="0" Spacing="24">
+
+                            <Frame BackgroundColor="#E1DFFE" CornerRadius="12" Padding="0">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="goToArticle"/>
+                                </Frame.GestureRecognizers>
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal" Margin="32">
+                                        <Label Text="Виды обжарки кофейных зерен"  WidthRequest="200" Style="{StaticResource BoldText}" FontSize="20"/>
+                                        <Frame Padding="0" HorizontalOptions="EndAndExpand" BackgroundColor="Transparent" BorderColor="#1E1584" CornerRadius="12">
+                                            <StackLayout Spacing="10" Padding="15, 8, 8, 8" Orientation="Horizontal" >
+                                                <Image Source="clock" Scale="1.3"/>
+                                                <Label Text="5 минут" Style="{StaticResource RegularText}" FontSize="20" />
+                                            </StackLayout>
+                                        </Frame>
+                                    </StackLayout>
+                                    <Image VerticalOptions="EndAndExpand" HorizontalOptions="Fill" Aspect="AspectFill" Source="article" />
+                                </StackLayout>
+                            </Frame>
+
+                            <Frame BackgroundColor="#E1DFFE" CornerRadius="12" Padding="0">
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal" Margin="32">
+                                        <Label Text="Виды обжарки кофейных зерен" WidthRequest="200" Style="{StaticResource BoldText}" FontSize="20"/>
+                                        <Frame Padding="0" HorizontalOptions="EndAndExpand" BackgroundColor="Transparent" BorderColor="#1E1584" CornerRadius="12">
+                                            <StackLayout Spacing="10" Padding="15, 8, 8, 8" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                                                <Image Source="clock" Scale="1.3"/>
+                                                <Label Text="5 минут" Style="{StaticResource RegularText}" FontSize="20" />
+                                            </StackLayout>
+                                        </Frame>
+                                    </StackLayout>
+                                    <Image VerticalOptions="EndAndExpand" Source="article" Aspect="AspectFill"/>
+                                </StackLayout>
+                            </Frame>
+
+                            <Frame BackgroundColor="#E1DFFE" CornerRadius="12" Padding="0">
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal" Margin="32">
+                                        <Label Text="Виды обжарки кофейных зерен" WidthRequest="200" Style="{StaticResource BoldText}" FontSize="20"/>
+                                        <Frame Padding="0" HorizontalOptions="EndAndExpand" BackgroundColor="Transparent" BorderColor="#1E1584" CornerRadius="12">
+                                            <StackLayout Spacing="10" Padding="15, 8, 8, 8" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                                                <Image Source="clock" Scale="1.3"/>
+                                                <Label Text="5 минут" Style="{StaticResource RegularText}" FontSize="20" />
+                                            </StackLayout>
+                                        </Frame>
+                                    </StackLayout>
+                                    <Image VerticalOptions="EndAndExpand" HorizontalOptions="FillAndExpand" Source="article" Aspect="AspectFill"/>
+                                </StackLayout>
+                            </Frame>
+
+                            <Frame BackgroundColor="#E1DFFE" CornerRadius="12" Padding="0">
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal" Margin="32">
+                                        <Label Text="Виды обжарки кофейных зерен" WidthRequest="200" Style="{StaticResource BoldText}" FontSize="20"/>
+                                        <Frame Padding="0" HorizontalOptions="EndAndExpand" BackgroundColor="Transparent" BorderColor="#1E1584" CornerRadius="12">
+                                            <StackLayout Spacing="10" Padding="15, 8, 8, 8" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                                                <Image Source="clock" Scale="1.3"/>
+                                                <Label Text="5 минут" Style="{StaticResource RegularText}" FontSize="20" />
+                                            </StackLayout>
+                                        </Frame>
+                                    </StackLayout>
+                                    <Image VerticalOptions="EndAndExpand" Source="article" Aspect="AspectFill"/>
+                                </StackLayout>
+                            </Frame>
+
+                        </StackLayout>
+
+                        <StackLayout Grid.Column="1" Spacing="24">
+                            <Frame BackgroundColor="#E1DFFE" CornerRadius="12" Padding="0">
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal" Margin="32">
+                                        <Label Text="Виды обжарки кофейных зерен" WidthRequest="200" Style="{StaticResource BoldText}" FontSize="20"/>
+                                        <Frame Padding="0" HorizontalOptions="EndAndExpand" BackgroundColor="Transparent" BorderColor="#1E1584" CornerRadius="12">
+                                            <StackLayout Spacing="10" Padding="15, 8, 8, 8" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                                                <Image Source="clock" Scale="1.3"/>
+                                                <Label Text="5 минут" Style="{StaticResource RegularText}" FontSize="20" />
+                                            </StackLayout>
+                                        </Frame>
+                                    </StackLayout>
+                                    <Image VerticalOptions="EndAndExpand" Source="article" Aspect="AspectFill"/>
+                                </StackLayout>
+                            </Frame>
+
+                            <Frame BackgroundColor="#E1DFFE" CornerRadius="12" Padding="0">
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal" Margin="32">
+                                        <Label Text="Виды обжарки кофейных зерен" WidthRequest="200" Style="{StaticResource BoldText}" FontSize="20"/>
+                                        <Frame Padding="0" HorizontalOptions="EndAndExpand" BackgroundColor="Transparent" BorderColor="#1E1584" CornerRadius="12">
+                                            <StackLayout Spacing="10" Padding="15, 8, 8, 8" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                                                <Image Source="clock" Scale="1.3"/>
+                                                <Label Text="5 минут" Style="{StaticResource RegularText}" FontSize="20" />
+                                            </StackLayout>
+                                        </Frame>
+                                    </StackLayout>
+                                    <Image VerticalOptions="EndAndExpand" Source="article" Aspect="AspectFill"/>
+                                </StackLayout>
+                            </Frame>
+
+                            <Frame BackgroundColor="#E1DFFE" CornerRadius="12" Padding="0">
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal" Margin="32">
+                                        <Label Text="Виды обжарки кофейных зерен" WidthRequest="200" Style="{StaticResource BoldText}" FontSize="20"/>
+                                        <Frame Padding="0" HorizontalOptions="EndAndExpand" BackgroundColor="Transparent" BorderColor="#1E1584" CornerRadius="12">
+                                            <StackLayout Spacing="10" Padding="15, 8, 8, 8" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                                                <Image Source="clock" Scale="1.3"/>
+                                                <Label Text="5 минут" Style="{StaticResource RegularText}" FontSize="20" />
+                                            </StackLayout>
+                                        </Frame>
+                                    </StackLayout>
+                                    <Image VerticalOptions="EndAndExpand" Source="article" Aspect="AspectFill"/>
+                                </StackLayout>
+                            </Frame>
+
+                            <Frame BackgroundColor="#E1DFFE" CornerRadius="12" Padding="0">
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal" Margin="32">
+                                        <Label Text="Виды обжарки кофейных зерен" WidthRequest="200" Style="{StaticResource BoldText}" FontSize="20"/>
+                                        <Frame Padding="0" HorizontalOptions="EndAndExpand" BackgroundColor="Transparent" BorderColor="#1E1584" CornerRadius="12">
+                                            <StackLayout Spacing="10" Padding="15, 8, 8, 8" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="CenterAndExpand">
+                                                <Image Source="clock" Scale="1.3"/>
+                                                <Label Text="5 минут" Style="{StaticResource RegularText}" FontSize="20" />
+                                            </StackLayout>
+                                        </Frame>
+                                    </StackLayout>
+                                    <Image VerticalOptions="EndAndExpand" Source="article" Aspect="AspectFill"/>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </Grid>
+                </ScrollView>
+            </Frame>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

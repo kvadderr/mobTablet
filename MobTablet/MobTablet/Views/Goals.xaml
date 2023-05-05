@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobTablet.Views.Goals">
+  <ContentView.Content>
+      
+      <StackLayout Spacing="32">
+            <Label Text="Цели" Style="{StaticResource BoldText}" FontSize="40" Margin="28, 0, 0, 0" />
+                <StackLayout Orientation="Horizontal" Spacing="20"  Margin="28, 0, 0, 0">
+                    <Button Text="Активные" Clicked="Button_Clicked" TextTransform="None" FontSize="Body" Background="{StaticResource blueGradient}" TextColor="White" CornerRadius="12" FontFamily="noto_sans_regular"/>
+                    <Button Text="Архив" Clicked="loadArchiv" FontSize="Body" Style="{StaticResource menuButtonStyle}" CornerRadius="12"/>
+                    <AbsoluteLayout Padding="0" Margin="0">
+                        <Button Clicked="Button_Clicked_1" Text="Новые" Style="{StaticResource menuButtonStyle}" CornerRadius="12"/>
+                        <Frame AbsoluteLayout.LayoutBounds="1.2,-0.3,24,24" CornerRadius="50" Padding="0" AbsoluteLayout.LayoutFlags="PositionProportional" WidthRequest="24" HeightRequest="24" Background="{StaticResource redGradient}">
+                            <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="1" Style="{StaticResource MediumText}" TextColor="White"/>
+                        </Frame>
+                    </AbsoluteLayout>
+                </StackLayout>
+
+            <Frame CornerRadius="12" BackgroundColor="White" HasShadow="False">
+
+                <StackLayout Spacing="20">
+
+                    <Grid HeightRequest="120">
+                        
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="80" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="Описание" Style="{StaticResource LightText}" Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                        <Label Text="Награда" Style="{StaticResource LightText}" Grid.Column="2" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                        <Label Text="Прогресс" Style="{StaticResource LightText}" Grid.Column="3" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+                        <Label Text="Время" Style="{StaticResource LightText}" Grid.Column="4" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center"/>
+                    
+                    </Grid>
+
+                    <Frame x:Name="tableFrame" Padding="0" Margin="0" HasShadow="False">
+
+                        <ListView x:Name="MyListView"
+                           HasUnevenRows="True"
+                           BackgroundColor="Transparent"
+                           SeparatorVisibility="None"
+                           SelectionMode="None"
+                           ItemsSource="{Binding MyData}"
+                           ItemTemplate="{StaticResource mainTable}" />
+
+                    </Frame>
+
+                </StackLayout>
+                
+            </Frame>
+            
+             
+
+
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>

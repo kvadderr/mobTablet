@@ -1,0 +1,151 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Fonts\neue_regular.ttf" />
+    <None Remove="Resources\Fonts\noto_sans_bold.ttf" />
+    <None Remove="Resources\Fonts\noto_sans_light.ttf" />
+    <None Remove="Resources\Fonts\noto_sans_medium.ttf" />
+    <None Remove="Resources\Fonts\noto_sans_regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Fonts\neue_regular.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\noto_sans_bold.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\noto_sans_light.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\noto_sans_medium.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\noto_sans_regular.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xam.Plugins.Forms.ProgressRing" Version="0.1.2" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="2.0.6" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2291" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.759" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Popups\PopupCancel.xaml.cs">
+      <DependentUpon>PopupCancel.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Popups\PopupSendMessage.xaml.cs">
+      <DependentUpon>PopupSendMessage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Popups\PopupSendIdea.xaml.cs">
+      <DependentUpon>PopupSendIdea.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Popups\PopupMyOrder.xaml.cs">
+      <DependentUpon>PopupMyOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Popups\PopupEmpty.xaml.cs">
+      <DependentUpon>PopupEmpty.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Popups\PopupSort.xaml.cs">
+      <DependentUpon>PopupSort.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Popups\PopupPrize.xaml.cs">
+      <DependentUpon>PopupPrize.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Popups\PopupViewProduct.xaml.cs">
+      <DependentUpon>PopupViewProduct.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Popups\PopupStartTest.xaml.cs">
+      <DependentUpon>PopupStartTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Popups\PopupConfirm.xaml.cs">
+      <DependentUpon>PopupConfirm.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\TestResult.xaml.cs">
+      <DependentUpon>TestResult.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Login.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Popups\PopupAchievements.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Popups\PopupConfirmation.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Popups\PopupContest.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Table\ActiveTable.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Table\ArchiveTable.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Achievements.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\AchievementsList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\AchievementsUserList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\AchievementsUserProfiles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Article.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Goals.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Home.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Library.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Messanger.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\NewsList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Notification.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\NotificationList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Profile.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Raiting.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SelectProfile.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Shop.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Test.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\TestItem.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

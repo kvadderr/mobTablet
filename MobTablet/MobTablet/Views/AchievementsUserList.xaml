@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobTablet.Views.AchievementsUserList">
+  <ContentView.Content>
+        <StackLayout Padding="0" Spacing="40">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                <ImageButton BackgroundColor="Transparent" Source="back" Margin="0, 0, 20, 0"/>
+                <Image Source="Avatar.png" Grid.RowSpan="2" WidthRequest="86" HeightRequest="86"/>
+                <StackLayout VerticalOptions="Center" Margin="10, 0, 0, 0">
+                    <Label Text="Иван Сидоров, 19 лет" Style="{StaticResource BoldText}" FontSize="16" />
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Официант" Style="{StaticResource RegularText}" FontSize="14" VerticalTextAlignment="Center"/>
+                        <Frame CornerRadius="12" Padding="8, 6, 8, 6" Background="{StaticResource blueGradient}" >
+                            <Label Text="1 уровень" TextColor="#fff" FontFamily="noto_sans_regular" HorizontalTextAlignment="Center"/>
+                        </Frame>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+            <Label Text="Карьерная лестница" Style="{StaticResource MediumText}" FontSize="20" Margin="40, 0, 0, 0"/>
+            <ScrollView Orientation="Horizontal" Padding="40, 0, 40, 0" HorizontalScrollBarVisibility="Never" Margin="0">
+                <StackLayout Orientation="Horizontal" Spacing="32">
+                    <StackLayout>
+                        <Image Source="active_level" WidthRequest="120" HeightRequest="120"/>
+                        <Label Text="Онбординг пройден" WidthRequest="100" HorizontalTextAlignment="Center" Style="{StaticResource MediumText}" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="active_ach" WidthRequest="120" HeightRequest="120"/>
+                        <Label Text="Новобранец" WidthRequest="100" HorizontalTextAlignment="Center" Style="{StaticResource MediumText}" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="active_ach" WidthRequest="120" HeightRequest="120"/>
+                        <Label Text="3 уровень" WidthRequest="100" HorizontalTextAlignment="Center" Style="{StaticResource MediumText}" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="active_ach" WidthRequest="120" HeightRequest="120"/>
+                        <Label Text="Онбординг пройден" WidthRequest="100" HorizontalTextAlignment="Center" Style="{StaticResource MediumText}" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="active_ach" WidthRequest="120" HeightRequest="120"/>
+                        <Label Text="3 уровень" WidthRequest="100" HorizontalTextAlignment="Center" Style="{StaticResource MediumText}" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="active_ach" WidthRequest="120" HeightRequest="120"/>
+                        <Label Text="Онбординг пройден" WidthRequest="100" HorizontalTextAlignment="Center" Style="{StaticResource MediumText}" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="active_ach" WidthRequest="120" HeightRequest="120"/>
+                        <Label Text="3 уровень" WidthRequest="100" HorizontalTextAlignment="Center" Style="{StaticResource MediumText}" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="active_ach" WidthRequest="120" HeightRequest="120"/>
+                        <Label Text="Онбординг пройден" WidthRequest="100" HorizontalTextAlignment="Center" Style="{StaticResource MediumText}" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="active_ach" WidthRequest="120" HeightRequest="120"/>
+                        <Label Text="3 уровень" WidthRequest="100" HorizontalTextAlignment="Center" Style="{StaticResource MediumText}" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="active_ach" WidthRequest="120" HeightRequest="120"/>
+                        <Label Text="Онбординг пройден" WidthRequest="100" HorizontalTextAlignment="Center" Style="{StaticResource MediumText}" FontSize="16"/>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+            <BoxView HeightRequest="1" Color="#524E7D" HorizontalOptions="FillAndExpand" Margin="40, 0, 40, 0" />
+            <Label Text="Проверка знаний" Style="{StaticResource MediumText}" FontSize="20" Margin="40, 0, 0, 0"/>
+            <ScrollView Orientation="Horizontal" Padding="40, 0, 40, 0" HorizontalScrollBarVisibility="Never" Margin="0">
+                <StackLayout Orientation="Horizontal" Spacing="32">
+                    <StackLayout>
+                        <Image Source="active_level" WidthRequest="120" HeightRequest="120"/>
+                        <Label Text="Онбординг пройден" WidthRequest="100" HorizontalTextAlignment="Center" Style="{StaticResource MediumText}" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="active_ach" WidthRequest="120" HeightRequest="120"/>
+                        <Label Text="Новобранец" WidthRequest="100" HorizontalTextAlignment="Center" Style="{StaticResource MediumText}" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="active_ach" WidthRequest="120" HeightRequest="120"/>
+                        <Label Text="3 уровень" WidthRequest="100" HorizontalTextAlignment="Center" Style="{StaticResource MediumText}" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="active_ach" WidthRequest="120" HeightRequest="120"/>
+                        <Label Text="Онбординг пройден" WidthRequest="100" HorizontalTextAlignment="Center" Style="{StaticResource MediumText}" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="active_ach" WidthRequest="120" HeightRequest="120"/>
+                        <Label Text="3 уровень" WidthRequest="100" HorizontalTextAlignment="Center" Style="{StaticResource MediumText}" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="active_ach" WidthRequest="120" HeightRequest="120"/>
+                        <Label Text="Онбординг пройден" WidthRequest="100" HorizontalTextAlignment="Center" Style="{StaticResource MediumText}" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="active_ach" WidthRequest="120" HeightRequest="120"/>
+                        <Label Text="3 уровень" WidthRequest="100" HorizontalTextAlignment="Center" Style="{StaticResource MediumText}" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="active_ach" WidthRequest="120" HeightRequest="120"/>
+                        <Label Text="Онбординг пройден" WidthRequest="100" HorizontalTextAlignment="Center" Style="{StaticResource MediumText}" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="active_ach" WidthRequest="120" HeightRequest="120"/>
+                        <Label Text="3 уровень" WidthRequest="100" HorizontalTextAlignment="Center" Style="{StaticResource MediumText}" FontSize="16"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Image Source="active_ach" WidthRequest="120" HeightRequest="120"/>
+                        <Label Text="Онбординг пройден" WidthRequest="100" HorizontalTextAlignment="Center" Style="{StaticResource MediumText}" FontSize="16"/>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

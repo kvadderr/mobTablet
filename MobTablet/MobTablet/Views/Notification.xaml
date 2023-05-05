@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobTablet.Views.Notification">
+  <ContentView.Content>
+        <StackLayout Spacing="32" Orientation="Vertical" Margin="0, 0, 20, 0">
+            <StackLayout Orientation="Horizontal" Spacing="10">
+                <Image Source="back"/>
+                <Label Text="Уведомления" Style="{StaticResource BoldText}" FontSize="40" Margin="28, 0, 0, 0" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Spacing="20"  Margin="28, 0, 0, 0">
+                <Button Clicked="Button_Clicked" Text="Мои уведомления" FontSize="Body" Background="{StaticResource blueGradient}" TextTransform="None"  TextColor="White" CornerRadius="12" FontFamily="noto_sans_regular"/>
+                <Button Clicked="Button_Clicked_1" Text="Новости" FontSize="Body" Style="{StaticResource menuButtonStyle}" TextTransform="None" CornerRadius="12"/>
+            </StackLayout>
+            <Frame x:Name="notFrame" CornerRadius="12" Background="{StaticResource blockGradient}" Padding="0" HasShadow="False" VerticalOptions="FillAndExpand">
+                
+            </Frame>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobTablet.Views.Article">
+  <ContentView.Content>
+        <ScrollView>
+            <StackLayout Padding="40" Spacing="20">
+                
+                <ImageButton Source="back" HorizontalOptions="Start" BackgroundColor="Transparent"/>
+                <Label Text="Виды обжарки  кофейных зерен" Style="{StaticResource MediumText}" FontSize="32" />
+                <Label Text="Время чтения: 5 минут" Style="{StaticResource MediumText}" FontSize="16" />
+                <Label Text="Обжарка – это одна из важнейших стадий при производстве кофе. Она заключается в термической обработке кофейных зёрен, благодаря которой кофе обретает определенный вкусовые и ароматические свойства.
+При обжарке происходит большое количество химических реакций, приводящих к формированию сложных соединений, которые формируют кофейный потенциал. В зависимости от температуры могут образовываться разные соединения. Управляя разными стадиями обжарки, можно корректировать вкус кофе."
+                       Style="{StaticResource RegularText}" FontSize="16"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="article_1" />
+                    <Image Source="article_2" />
+                </StackLayout>
+
+                <Label Text="Обжарка – это одна из важнейших стадий при производстве кофе. Она заключается в термической обработке кофейных зёрен, благодаря которой кофе обретает определенный вкусовые и ароматические свойства.
+При обжарке происходит большое количество химических реакций, приводящих к формированию сложных соединений, которые формируют кофейный потенциал. В зависимости от температуры могут образовываться разные соединения. Управляя разными стадиями обжарки, можно корректировать вкус кофе."
+                       Style="{StaticResource RegularText}" FontSize="16"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentView.Content>
+</ContentView>
