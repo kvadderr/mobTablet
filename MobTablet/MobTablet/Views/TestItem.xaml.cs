@@ -65,7 +65,7 @@ namespace MobTablet.Views
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            var frameData = App.Current.MainPage.FindByName<Frame>("myFrameMain");
+            var frameData = Parent.FindByName<Frame>("myFrameMain");
             TestResult testResult = new TestResult();
             frameData.Content = testResult;
         }

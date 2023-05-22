@@ -18,7 +18,7 @@ namespace MobTablet.Popups
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            var frameData = App.Current.MainPage.FindByName<Frame>("myFrameMain");
+            var frameData = Parent.FindByName<Frame>("myFrameMain");
             TestItem testResult = new TestItem();
             frameData.Content = testResult;
         }

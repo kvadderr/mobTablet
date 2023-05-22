@@ -1,48 +1,131 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<xct:Popup xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
-             Size="1000, 500"
-             x:Class="MobTablet.Popups.PopupAchievements">
-    <Frame CornerRadius="12" Margin="0" Padding="0">
+<xct:Popup
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    Size="1000, 500"
+    x:Class="MobTablet.Popups.PopupAchievements">
+    <Frame
+        CornerRadius="12"
+        Margin="0"
+        Padding="0">
         <ScrollView>
-            <StackLayout xct:CornerRadiusEffect.CornerRadius="12" Background="{StaticResource popupGradient}" Spacing="30" Padding="100, 50, 100, 50">
-                <ImageButton HorizontalOptions="End" Source="close" BorderWidth="1" BorderColor="#1E1584" CornerRadius="180" Padding="35, 18, 35, 18" BackgroundColor="Transparent"/>
-                <Label Text="28.07.2022" HorizontalTextAlignment="Center" Style="{StaticResource MediumText}" FontSize="20"/>
-                <Image Source="active_level" WidthRequest="120" HeightRequest="120"/>
-                <Label Text="Диагностика пройдена" HorizontalTextAlignment="Center" Style="{StaticResource BoldText}" FontSize="32"/>
+            <StackLayout
+                xct:CornerRadiusEffect.CornerRadius="12"
+                Background="{StaticResource popupGradient}"
+                Spacing="30"
+                Padding="100, 50, 100, 50">
+                <ImageButton
+                    Clicked="ImageButton_Clicked"
+                    HorizontalOptions="End"
+                    Source="close"
+                    BorderWidth="1"
+                    BorderColor="#1E1584"
+                    CornerRadius="180"
+                    Padding="35, 18, 35, 18"
+                    BackgroundColor="Transparent" />
+                <Label
+                    Text="28.07.2022"
+                    HorizontalTextAlignment="Center"
+                    Style="{StaticResource MediumText}"
+                    FontSize="20" />
+                <Image
+                    Source="active_level"
+                    WidthRequest="120"
+                    HeightRequest="120" />
+                <Label
+                    Text="Диагностика пройдена"
+                    HorizontalTextAlignment="Center"
+                    Style="{StaticResource BoldText}"
+                    FontSize="32" />
 
                 <Grid>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition
+                            Width="*" />
+                        <ColumnDefinition
+                            Width="Auto" />
+                        <ColumnDefinition
+                            Width="*" />
                     </Grid.ColumnDefinitions>
 
-                    <StackLayout Grid.Column="0" Spacing="30" Orientation="Horizontal" HorizontalOptions="EndAndExpand" Margin="0, 0, 20, 0">
-                        <StackLayout Spacing="10" Orientation="Horizontal">
-                            <Image Source="small_coin.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
-                            <Label Text="+ 100" Style="{StaticResource BoldText}" FontSize="20" Grid.Column="1" VerticalOptions="Center"/>
+                    <StackLayout
+                        Grid.Column="0"
+                        Spacing="30"
+                        Orientation="Horizontal"
+                        HorizontalOptions="EndAndExpand"
+                        Margin="0, 0, 20, 0">
+                        <StackLayout
+                            Spacing="10"
+                            Orientation="Horizontal">
+                            <Image
+                                Source="small_coin.png"
+                                WidthRequest="30"
+                                HeightRequest="30"
+                                VerticalOptions="Center" />
+                            <Label
+                                Text="+ 100"
+                                Style="{StaticResource BoldText}"
+                                FontSize="20"
+                                Grid.Column="1"
+                                VerticalOptions="Center" />
                         </StackLayout>
-                        <StackLayout Spacing="10" Orientation="Horizontal">
-                            <Image Source="small_karma.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
-                            <Label Text="+ 500" Style="{StaticResource BoldText}" FontSize="20" Grid.Column="1" VerticalOptions="Center"/>
+                        <StackLayout
+                            Spacing="10"
+                            Orientation="Horizontal">
+                            <Image
+                                Source="small_karma.png"
+                                WidthRequest="30"
+                                HeightRequest="30"
+                                VerticalOptions="Center" />
+                            <Label
+                                Text="+ 500"
+                                Style="{StaticResource BoldText}"
+                                FontSize="20"
+                                Grid.Column="1"
+                                VerticalOptions="Center" />
                         </StackLayout>
                     </StackLayout>
 
-                    <BoxView Grid.Column="1" WidthRequest="1" Color="#524E7D" VerticalOptions="FillAndExpand" />
+                    <BoxView
+                        Grid.Column="1"
+                        WidthRequest="1"
+                        Color="#524E7D"
+                        VerticalOptions="FillAndExpand" />
 
-                    <StackLayout Grid.Column="2" Orientation="Horizontal" Spacing="20" Margin="20, 0, 0, 0">
-                        <Frame Background="{StaticResource blueGradient}" Padding="16, 12, 16, 12" CornerRadius="12">
-                            <Label Text="Частый" Style="{StaticResource RegularText}" FontSize="16" TextColor="White" />
+                    <StackLayout
+                        Grid.Column="2"
+                        Orientation="Horizontal"
+                        Spacing="20"
+                        Margin="20, 0, 0, 0">
+                        <Frame
+                            Background="{StaticResource blueGradient}"
+                            Padding="16, 12, 16, 12"
+                            CornerRadius="12">
+                            <Label
+                                Text="Частый"
+                                Style="{StaticResource RegularText}"
+                                FontSize="16"
+                                TextColor="White" />
                         </Frame>
-                        <Label Text="Есть у 100% коллег" Style="{StaticResource RegularText}" FontSize="16" VerticalOptions="Center"/>
+                        <Label
+                            Text="Есть у 100% коллег"
+                            Style="{StaticResource RegularText}"
+                            FontSize="16"
+                            VerticalOptions="Center" />
                     </StackLayout>
 
                 </Grid>
 
-                <BoxView HeightRequest="1" Color="#524E7D" HorizontalOptions="FillAndExpand" />
-                <Label Text="Твоя первая диагностика пройдена! Теперь ты знаешь как отличить кофейные зерна от растворимого порошка." Style="{StaticResource RegularText}" HorizontalTextAlignment="Center" FontSize="16"/>
+                <BoxView
+                    HeightRequest="1"
+                    Color="#524E7D"
+                    HorizontalOptions="FillAndExpand" />
+                <Label
+                    Text="Твоя первая диагностика пройдена! Теперь ты знаешь как отличить кофейные зерна от растворимого порошка."
+                    Style="{StaticResource RegularText}"
+                    HorizontalTextAlignment="Center"
+                    FontSize="16" />
 
             </StackLayout>
         </ScrollView>

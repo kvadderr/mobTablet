@@ -1,64 +1,190 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             BackgroundImageSource="bg"
-             x:Class="MobTablet.Login">
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundImageSource="bg"
+    x:Class="MobTablet.Login">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="40">
-            <Image Source="logo" />
-            <Label Text="Введите пин-код для входа" HorizontalTextAlignment="Center" FontSize="20" FontFamily="neue_regular"/>
+        <StackLayout
+            VerticalOptions="CenterAndExpand"
+            HorizontalOptions="CenterAndExpand"
+            Spacing="40">
+            <Image
+                Source="logo" />
+            <Label
+                Text="Введите пин-код для входа"
+                HorizontalTextAlignment="Center"
+                FontSize="20"
+                FontFamily="neue_regular" />
 
-            <Grid HorizontalOptions="CenterAndExpand">
+            <Grid
+                HorizontalOptions="CenterAndExpand">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition
+                        Width="Auto" />
+                    <ColumnDefinition
+                        Width="Auto" />
+                    <ColumnDefinition
+                        Width="Auto" />
+                    <ColumnDefinition
+                        Width="Auto" />
                 </Grid.ColumnDefinitions>
-                <StackLayout Grid.Column="0">
-                    <Label Text="" HorizontalTextAlignment="Center" FontSize="20" FontFamily="neue_regular"/>
-                    <BoxView HeightRequest="1" BackgroundColor="#000" HorizontalOptions="FillAndExpand"/>
+                <StackLayout
+                    Grid.Column="0">
+                    <Label
+                        Text=""
+                        HorizontalTextAlignment="Center"
+                        FontSize="20"
+                        FontFamily="neue_regular" />
+                    <BoxView
+                        HeightRequest="1"
+                        BackgroundColor="#000"
+                        HorizontalOptions="FillAndExpand" />
                 </StackLayout>
-                <StackLayout Grid.Column="1">
-                    <Label Text="" HorizontalTextAlignment="Center" FontSize="20" FontFamily="neue_regular"/>
-                    <BoxView HeightRequest="1" BackgroundColor="#000" HorizontalOptions="FillAndExpand"/>
+                <StackLayout
+                    Grid.Column="1">
+                    <Label
+                        Text=""
+                        HorizontalTextAlignment="Center"
+                        FontSize="20"
+                        FontFamily="neue_regular" />
+                    <BoxView
+                        HeightRequest="1"
+                        BackgroundColor="#000"
+                        HorizontalOptions="FillAndExpand" />
                 </StackLayout>
-                <StackLayout Grid.Column="2">
-                    <Label Text="" HorizontalTextAlignment="Center" FontSize="20" FontFamily="neue_regular"/>
-                    <BoxView HeightRequest="1" BackgroundColor="#000" HorizontalOptions="FillAndExpand"/>
+                <StackLayout
+                    Grid.Column="2">
+                    <Label
+                        Text=""
+                        HorizontalTextAlignment="Center"
+                        FontSize="20"
+                        FontFamily="neue_regular" />
+                    <BoxView
+                        HeightRequest="1"
+                        BackgroundColor="#000"
+                        HorizontalOptions="FillAndExpand" />
                 </StackLayout>
-                <StackLayout Grid.Column="3">
-                    <Label Text="" HorizontalTextAlignment="Center" FontSize="20" FontFamily="neue_regular"/>
-                    <BoxView HeightRequest="1" BackgroundColor="#000" HorizontalOptions="FillAndExpand"/>
+                <StackLayout
+                    Grid.Column="3">
+                    <Label
+                        Text=""
+                        HorizontalTextAlignment="Center"
+                        FontSize="20"
+                        FontFamily="neue_regular" />
+                    <BoxView
+                        HeightRequest="1"
+                        BackgroundColor="#000"
+                        HorizontalOptions="FillAndExpand" />
                 </StackLayout>
             </Grid>
 
-            <Grid HorizontalOptions="CenterAndExpand">
+            <Grid
+                HorizontalOptions="CenterAndExpand">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition
+                        Width="Auto" />
+                    <ColumnDefinition
+                        Width="Auto" />
+                    <ColumnDefinition
+                        Width="Auto" />
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
+                    <RowDefinition
+                        Height="Auto" />
+                    <RowDefinition
+                        Height="Auto" />
+                    <RowDefinition
+                        Height="Auto" />
+                    <RowDefinition
+                        Height="Auto" />
                 </Grid.RowDefinitions>
 
-                <Button BackgroundColor="Transparent" FontSize="36" Text="1" Grid.Column="0" Grid.Row="0" FontFamily="neue_regular"/>
-                <Button BackgroundColor="Transparent" FontSize="36" Text="2" Grid.Column="1" Grid.Row="0" FontFamily="neue_regular"/>
-                <Button BackgroundColor="Transparent" FontSize="36" Text="3" Grid.Column="2" Grid.Row="0" FontFamily="neue_regular"/>
-                <Button BackgroundColor="Transparent" FontSize="36" Text="4" Grid.Column="0" Grid.Row="1" FontFamily="neue_regular"/>
-                <Button BackgroundColor="Transparent" FontSize="36" Text="5" Grid.Column="1" Grid.Row="1" FontFamily="neue_regular"/>
-                <Button BackgroundColor="Transparent" FontSize="36" Text="6" Grid.Column="2" Grid.Row="1" FontFamily="neue_regular"/>
-                <Button BackgroundColor="Transparent" FontSize="36" Text="7" Grid.Column="0" Grid.Row="2" FontFamily="neue_regular"/>
-                <Button BackgroundColor="Transparent" FontSize="36" Text="8" Grid.Column="1" Grid.Row="2" FontFamily="neue_regular"/>
-                <Button BackgroundColor="Transparent" FontSize="36" Text="9" Grid.Column="2" Grid.Row="2" FontFamily="neue_regular"/>   
-                <ImageButton Source="close" BackgroundColor="Transparent" Grid.Column="0" Grid.Row="3" HorizontalOptions="Center" VerticalOptions="Center"/>
-                <Button BackgroundColor="Transparent" FontSize="36" Text="0" Grid.Column="1" Grid.Row="3" FontFamily="neue_regular"/>
-                <ImageButton Source="erase" BackgroundColor="Transparent" Grid.Column="2" Grid.Row="3" HorizontalOptions="Center" VerticalOptions="Center"/>
-                
+                <Button
+                    BackgroundColor="Transparent"
+                    FontSize="36"
+                    Text="1"
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    FontFamily="neue_regular" />
+                <Button
+                    BackgroundColor="Transparent"
+                    FontSize="36"
+                    Text="2"
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    FontFamily="neue_regular" />
+                <Button
+                    BackgroundColor="Transparent"
+                    FontSize="36"
+                    Text="3"
+                    Grid.Column="2"
+                    Grid.Row="0"
+                    FontFamily="neue_regular" />
+                <Button
+                    BackgroundColor="Transparent"
+                    FontSize="36"
+                    Text="4"
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    FontFamily="neue_regular" />
+                <Button
+                    BackgroundColor="Transparent"
+                    FontSize="36"
+                    Text="5"
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    FontFamily="neue_regular" />
+                <Button
+                    BackgroundColor="Transparent"
+                    FontSize="36"
+                    Text="6"
+                    Grid.Column="2"
+                    Grid.Row="1"
+                    FontFamily="neue_regular" />
+                <Button
+                    BackgroundColor="Transparent"
+                    FontSize="36"
+                    Text="7"
+                    Grid.Column="0"
+                    Grid.Row="2"
+                    FontFamily="neue_regular" />
+                <Button
+                    BackgroundColor="Transparent"
+                    FontSize="36"
+                    Text="8"
+                    Grid.Column="1"
+                    Grid.Row="2"
+                    FontFamily="neue_regular" />
+                <Button
+                    BackgroundColor="Transparent"
+                    FontSize="36"
+                    Text="9"
+                    Grid.Column="2"
+                    Grid.Row="2"
+                    FontFamily="neue_regular" />
+                <ImageButton
+                    Source="close"
+                    BackgroundColor="Transparent"
+                    Grid.Column="0"
+                    Grid.Row="3"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" />
+                <Button
+                    BackgroundColor="Transparent"
+                    FontSize="36"
+                    Text="0"
+                    Grid.Column="1"
+                    Grid.Row="3"
+                    FontFamily="neue_regular" />
+                <ImageButton
+                    Source="erase"
+                    BackgroundColor="Transparent"
+                    Grid.Column="2"
+                    Grid.Row="3"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" />
+
 
             </Grid>
 

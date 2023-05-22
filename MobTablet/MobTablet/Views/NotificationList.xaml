@@ -1,174 +1,447 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobTablet.Views.NotificationList">
-  <ContentView.Content>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MobTablet.Views.NotificationList">
+    <ContentView.Content>
         <ScrollView>
-        <StackLayout Spacing="12" Padding="20">
-            <Frame CornerRadius="12" BackgroundColor="#efeeff" >
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="280" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-
-                    <Label Grid.Column="0" Text="Тест оценки мотивации сотрудников" Style="{StaticResource RegularText}" FontSize="16" VerticalOptions="Center"/>
-
-                    <StackLayout Grid.Column="1" VerticalOptions="Center" >
-                        <StackLayout Orientation="Horizontal" Spacing="10">
-                            <Image Source="small_coin.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
-                            <Label Text="+ 50" Style="{StaticResource BoldText}" FontSize="20" VerticalOptions="Center"/>
-                        </StackLayout>
-
-                        <StackLayout Orientation="Horizontal" Spacing="10">
-                            <Image Source="small_karma.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
-                            <Label Text="+ 200" Style="{StaticResource BoldText}" FontSize="20" VerticalOptions="Center"/>
-                        </StackLayout>
-                    </StackLayout>
-
-                    <Label Grid.Column="2" Text="21.06.2022, 12:08" Style="{StaticResource RegularText}" FontSize="16" VerticalOptions="Center"/>
-
-                    <Frame Grid.Column="4" Background="{StaticResource redGradient}" CornerRadius="150" HorizontalOptions="Center" VerticalOptions="Center" Padding="0" WidthRequest="24" HeightRequest="24">
-                        <Label Text="1" Style="{StaticResource RegularText}" FontSize="12" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Wheat"/>
-                    </Frame>
-                </Grid>
-            </Frame>
-                <Frame CornerRadius="12" BackgroundColor="#efeeff" >
+            <StackLayout
+                Spacing="12"
+                Padding="20">
+                <Frame
+                    CornerRadius="12"
+                    BackgroundColor="#efeeff">
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="280" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition
+                                Width="280" />
+                            <ColumnDefinition
+                                Width="*" />
+                            <ColumnDefinition
+                                Width="*" />
+                            <ColumnDefinition
+                                Width="*" />
+                            <ColumnDefinition
+                                Width="*" />
                         </Grid.ColumnDefinitions>
 
-                        <Label Grid.Column="0" Text="Тест оценки мотивации сотрудников" Style="{StaticResource RegularText}" FontSize="16" VerticalOptions="Center"/>
+                        <Label
+                            Grid.Column="0"
+                            Text="Тест оценки мотивации сотрудников"
+                            Style="{StaticResource RegularText}"
+                            FontSize="16"
+                            VerticalOptions="Center" />
 
-                        <StackLayout Grid.Column="1" VerticalOptions="Center" >
-                            <StackLayout Orientation="Horizontal" Spacing="10">
-                                <Image Source="small_coin.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
-                                <Label Text="+ 50" Style="{StaticResource BoldText}" FontSize="20" VerticalOptions="Center"/>
+                        <StackLayout
+                            Grid.Column="1"
+                            VerticalOptions="Center">
+                            <StackLayout
+                                Orientation="Horizontal"
+                                Spacing="10">
+                                <Image
+                                    Source="small_coin.png"
+                                    WidthRequest="30"
+                                    HeightRequest="30"
+                                    VerticalOptions="Center" />
+                                <Label
+                                    Text="+ 50"
+                                    Style="{StaticResource BoldText}"
+                                    FontSize="20"
+                                    VerticalOptions="Center" />
                             </StackLayout>
 
-                            <StackLayout Orientation="Horizontal" Spacing="10">
-                                <Image Source="small_karma.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
-                                <Label Text="+ 200" Style="{StaticResource BoldText}" FontSize="20" VerticalOptions="Center"/>
+                            <StackLayout
+                                Orientation="Horizontal"
+                                Spacing="10">
+                                <Image
+                                    Source="small_karma.png"
+                                    WidthRequest="30"
+                                    HeightRequest="30"
+                                    VerticalOptions="Center" />
+                                <Label
+                                    Text="+ 200"
+                                    Style="{StaticResource BoldText}"
+                                    FontSize="20"
+                                    VerticalOptions="Center" />
                             </StackLayout>
                         </StackLayout>
 
-                        <Label Grid.Column="2" Text="21.06.2022, 12:08" Style="{StaticResource RegularText}" FontSize="16" VerticalOptions="Center"/>
+                        <Label
+                            Grid.Column="2"
+                            Text="21.06.2022, 12:08"
+                            Style="{StaticResource RegularText}"
+                            FontSize="16"
+                            VerticalOptions="Center" />
 
-                        <Frame Grid.Column="4" Background="{StaticResource redGradient}" CornerRadius="150" HorizontalOptions="Center" VerticalOptions="Center" Padding="0" WidthRequest="24" HeightRequest="24">
-                            <Label Text="1" Style="{StaticResource RegularText}" FontSize="12" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Wheat"/>
+                        <Frame
+                            Grid.Column="4"
+                            Background="{StaticResource redGradient}"
+                            CornerRadius="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Padding="0"
+                            WidthRequest="24"
+                            HeightRequest="24">
+                            <Label
+                                Text="1"
+                                Style="{StaticResource RegularText}"
+                                FontSize="12"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                TextColor="Wheat" />
                         </Frame>
                     </Grid>
                 </Frame>
-                <Frame CornerRadius="12" BackgroundColor="#efeeff" >
+                <Frame
+                    CornerRadius="12"
+                    BackgroundColor="#efeeff">
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="280" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition
+                                Width="280" />
+                            <ColumnDefinition
+                                Width="*" />
+                            <ColumnDefinition
+                                Width="*" />
+                            <ColumnDefinition
+                                Width="*" />
+                            <ColumnDefinition
+                                Width="*" />
                         </Grid.ColumnDefinitions>
 
-                        <Label Grid.Column="0" Text="Тест оценки мотивации сотрудников" Style="{StaticResource RegularText}" FontSize="16" VerticalOptions="Center"/>
+                        <Label
+                            Grid.Column="0"
+                            Text="Тест оценки мотивации сотрудников"
+                            Style="{StaticResource RegularText}"
+                            FontSize="16"
+                            VerticalOptions="Center" />
 
-                        <StackLayout Grid.Column="1" VerticalOptions="Center" >
-                            <StackLayout Orientation="Horizontal" Spacing="10">
-                                <Image Source="small_coin.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
-                                <Label Text="- 333" TextColor="#FF3B5D" Style="{StaticResource BoldText}" FontSize="20" VerticalOptions="Center"/>
+                        <StackLayout
+                            Grid.Column="1"
+                            VerticalOptions="Center">
+                            <StackLayout
+                                Orientation="Horizontal"
+                                Spacing="10">
+                                <Image
+                                    Source="small_coin.png"
+                                    WidthRequest="30"
+                                    HeightRequest="30"
+                                    VerticalOptions="Center" />
+                                <Label
+                                    Text="+ 50"
+                                    Style="{StaticResource BoldText}"
+                                    FontSize="20"
+                                    VerticalOptions="Center" />
                             </StackLayout>
 
-                            <StackLayout Orientation="Horizontal" Spacing="10">
-                                <Image Source="small_karma.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
-                                <Label Text="- 200" TextColor="#FF3B5D" Style="{StaticResource BoldText}" FontSize="20" VerticalOptions="Center"/>
+                            <StackLayout
+                                Orientation="Horizontal"
+                                Spacing="10">
+                                <Image
+                                    Source="small_karma.png"
+                                    WidthRequest="30"
+                                    HeightRequest="30"
+                                    VerticalOptions="Center" />
+                                <Label
+                                    Text="+ 200"
+                                    Style="{StaticResource BoldText}"
+                                    FontSize="20"
+                                    VerticalOptions="Center" />
                             </StackLayout>
                         </StackLayout>
 
-                        <Label Grid.Column="2" Text="21.06.2022, 12:08" Style="{StaticResource RegularText}" FontSize="16" VerticalOptions="Center"/>
+                        <Label
+                            Grid.Column="2"
+                            Text="21.06.2022, 12:08"
+                            Style="{StaticResource RegularText}"
+                            FontSize="16"
+                            VerticalOptions="Center" />
 
-                        <Frame Grid.Column="4" Background="{StaticResource redGradient}" CornerRadius="150" HorizontalOptions="Center" VerticalOptions="Center" Padding="0" WidthRequest="24" HeightRequest="24">
-                            <Label Text="1" Style="{StaticResource RegularText}" FontSize="12" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Wheat"/>
+                        <Frame
+                            Grid.Column="4"
+                            Background="{StaticResource redGradient}"
+                            CornerRadius="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Padding="0"
+                            WidthRequest="24"
+                            HeightRequest="24">
+                            <Label
+                                Text="1"
+                                Style="{StaticResource RegularText}"
+                                FontSize="12"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                TextColor="Wheat" />
                         </Frame>
                     </Grid>
                 </Frame>
-                <Frame CornerRadius="12" BackgroundColor="#efeeff" >
+                <Frame
+                    CornerRadius="12"
+                    BackgroundColor="#efeeff">
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="280" />
-                            <ColumnDefinition Width="120" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition
+                                Width="280" />
+                            <ColumnDefinition
+                                Width="*" />
+                            <ColumnDefinition
+                                Width="*" />
+                            <ColumnDefinition
+                                Width="*" />
+                            <ColumnDefinition
+                                Width="*" />
                         </Grid.ColumnDefinitions>
 
-                        <Label Grid.Column="0" Text="Покупка фирменной футболки “Koffein”" Style="{StaticResource RegularText}" FontSize="16" VerticalOptions="Center"/>
-                        <Label Grid.Column="1" Text="Осталось 5 дней" Style="{StaticResource RegularText}" TextColor="Red" FontSize="16" VerticalOptions="Center"/>
-                        <Label Grid.Column="2" Text="21.06.2022, 12:08" Style="{StaticResource RegularText}" FontSize="16" VerticalOptions="Center"/>
+                        <Label
+                            Grid.Column="0"
+                            Text="Тест оценки мотивации сотрудников"
+                            Style="{StaticResource RegularText}"
+                            FontSize="16"
+                            VerticalOptions="Center" />
 
-                        <Button Text="Начать" FontFamily="noto_sans_regular" TextColor="#1E1584" Grid.Column="3" HorizontalOptions="Center" CornerRadius="12" Background ="{StaticResource greenGradient}" BackgroundColor="#26E27C"/>
-
-                    </Grid>
-                </Frame>
-                <Frame CornerRadius="12" BackgroundColor="#efeeff" >
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="280" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
-
-                        <Label Grid.Column="0" Text="Тест оценки мотивации сотрудников" Style="{StaticResource RegularText}" FontSize="16" VerticalOptions="Center"/>
-
-                        <StackLayout Grid.Column="1" VerticalOptions="Center" >
-                            <StackLayout Orientation="Horizontal" Spacing="10">
-                                <Image Source="small_coin.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
-                                <Label Text="+ 50" Style="{StaticResource BoldText}" FontSize="20" VerticalOptions="Center"/>
+                        <StackLayout
+                            Grid.Column="1"
+                            VerticalOptions="Center">
+                            <StackLayout
+                                Orientation="Horizontal"
+                                Spacing="10">
+                                <Image
+                                    Source="small_coin.png"
+                                    WidthRequest="30"
+                                    HeightRequest="30"
+                                    VerticalOptions="Center" />
+                                <Label
+                                    Text="- 333"
+                                    TextColor="#FF3B5D"
+                                    Style="{StaticResource BoldText}"
+                                    FontSize="20"
+                                    VerticalOptions="Center" />
                             </StackLayout>
 
-                            <StackLayout Orientation="Horizontal" Spacing="10">
-                                <Image Source="small_karma.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
-                                <Label Text="+ 200" Style="{StaticResource BoldText}" FontSize="20" VerticalOptions="Center"/>
+                            <StackLayout
+                                Orientation="Horizontal"
+                                Spacing="10">
+                                <Image
+                                    Source="small_karma.png"
+                                    WidthRequest="30"
+                                    HeightRequest="30"
+                                    VerticalOptions="Center" />
+                                <Label
+                                    Text="- 200"
+                                    TextColor="#FF3B5D"
+                                    Style="{StaticResource BoldText}"
+                                    FontSize="20"
+                                    VerticalOptions="Center" />
                             </StackLayout>
                         </StackLayout>
 
-                        <Label Grid.Column="2" Text="21.06.2022, 12:08" Style="{StaticResource RegularText}" FontSize="16" VerticalOptions="Center"/>
+                        <Label
+                            Grid.Column="2"
+                            Text="21.06.2022, 12:08"
+                            Style="{StaticResource RegularText}"
+                            FontSize="16"
+                            VerticalOptions="Center" />
+
+                        <Frame
+                            Grid.Column="4"
+                            Background="{StaticResource redGradient}"
+                            CornerRadius="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Padding="0"
+                            WidthRequest="24"
+                            HeightRequest="24">
+                            <Label
+                                Text="1"
+                                Style="{StaticResource RegularText}"
+                                FontSize="12"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"
+                                TextColor="Wheat" />
+                        </Frame>
+                    </Grid>
+                </Frame>
+                <Frame
+                    CornerRadius="12"
+                    BackgroundColor="#efeeff">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition
+                                Width="280" />
+                            <ColumnDefinition
+                                Width="120" />
+                            <ColumnDefinition
+                                Width="*" />
+                            <ColumnDefinition
+                                Width="*" />
+                            <ColumnDefinition
+                                Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label
+                            Grid.Column="0"
+                            Text="Покупка фирменной футболки “Koffein”"
+                            Style="{StaticResource RegularText}"
+                            FontSize="16"
+                            VerticalOptions="Center" />
+                        <Label
+                            Grid.Column="1"
+                            Text="Осталось 5 дней"
+                            Style="{StaticResource RegularText}"
+                            TextColor="Red"
+                            FontSize="16"
+                            VerticalOptions="Center" />
+                        <Label
+                            Grid.Column="2"
+                            Text="21.06.2022, 12:08"
+                            Style="{StaticResource RegularText}"
+                            FontSize="16"
+                            VerticalOptions="Center" />
+
+                        <Button
+                            Text="Начать"
+                            FontFamily="noto_sans_regular"
+                            TextColor="#1E1584"
+                            Grid.Column="3"
+                            HorizontalOptions="Center"
+                            CornerRadius="12"
+                            Background="{StaticResource greenGradient}"
+                            BackgroundColor="#26E27C" />
 
                     </Grid>
                 </Frame>
-                <Frame CornerRadius="12" BackgroundColor="#efeeff" >
+                <Frame
+                    CornerRadius="12"
+                    BackgroundColor="#efeeff">
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="280" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition
+                                Width="280" />
+                            <ColumnDefinition
+                                Width="*" />
+                            <ColumnDefinition
+                                Width="*" />
+                            <ColumnDefinition
+                                Width="*" />
+                            <ColumnDefinition
+                                Width="*" />
                         </Grid.ColumnDefinitions>
 
-                        <Label Grid.Column="0" Text="Тест оценки мотивации сотрудников" Style="{StaticResource RegularText}" FontSize="16" VerticalOptions="Center"/>
+                        <Label
+                            Grid.Column="0"
+                            Text="Тест оценки мотивации сотрудников"
+                            Style="{StaticResource RegularText}"
+                            FontSize="16"
+                            VerticalOptions="Center" />
 
-                        <StackLayout Grid.Column="1" VerticalOptions="Center" >
-                            <StackLayout Orientation="Horizontal" Spacing="10">
-                                <Image Source="small_coin.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
-                                <Label Text="+ 50" Style="{StaticResource BoldText}" FontSize="20" VerticalOptions="Center"/>
+                        <StackLayout
+                            Grid.Column="1"
+                            VerticalOptions="Center">
+                            <StackLayout
+                                Orientation="Horizontal"
+                                Spacing="10">
+                                <Image
+                                    Source="small_coin.png"
+                                    WidthRequest="30"
+                                    HeightRequest="30"
+                                    VerticalOptions="Center" />
+                                <Label
+                                    Text="+ 50"
+                                    Style="{StaticResource BoldText}"
+                                    FontSize="20"
+                                    VerticalOptions="Center" />
                             </StackLayout>
 
-                            <StackLayout Orientation="Horizontal" Spacing="10">
-                                <Image Source="small_karma.png" WidthRequest="30" HeightRequest="30" VerticalOptions="Center"/>
-                                <Label Text="+ 200" Style="{StaticResource BoldText}" FontSize="20" VerticalOptions="Center"/>
+                            <StackLayout
+                                Orientation="Horizontal"
+                                Spacing="10">
+                                <Image
+                                    Source="small_karma.png"
+                                    WidthRequest="30"
+                                    HeightRequest="30"
+                                    VerticalOptions="Center" />
+                                <Label
+                                    Text="+ 200"
+                                    Style="{StaticResource BoldText}"
+                                    FontSize="20"
+                                    VerticalOptions="Center" />
                             </StackLayout>
                         </StackLayout>
 
-                        <Label Grid.Column="2" Text="21.06.2022, 12:08" Style="{StaticResource RegularText}" FontSize="16" VerticalOptions="Center"/>
+                        <Label
+                            Grid.Column="2"
+                            Text="21.06.2022, 12:08"
+                            Style="{StaticResource RegularText}"
+                            FontSize="16"
+                            VerticalOptions="Center" />
+
+                    </Grid>
+                </Frame>
+                <Frame
+                    CornerRadius="12"
+                    BackgroundColor="#efeeff">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition
+                                Width="280" />
+                            <ColumnDefinition
+                                Width="*" />
+                            <ColumnDefinition
+                                Width="*" />
+                            <ColumnDefinition
+                                Width="*" />
+                            <ColumnDefinition
+                                Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label
+                            Grid.Column="0"
+                            Text="Тест оценки мотивации сотрудников"
+                            Style="{StaticResource RegularText}"
+                            FontSize="16"
+                            VerticalOptions="Center" />
+
+                        <StackLayout
+                            Grid.Column="1"
+                            VerticalOptions="Center">
+                            <StackLayout
+                                Orientation="Horizontal"
+                                Spacing="10">
+                                <Image
+                                    Source="small_coin.png"
+                                    WidthRequest="30"
+                                    HeightRequest="30"
+                                    VerticalOptions="Center" />
+                                <Label
+                                    Text="+ 50"
+                                    Style="{StaticResource BoldText}"
+                                    FontSize="20"
+                                    VerticalOptions="Center" />
+                            </StackLayout>
+
+                            <StackLayout
+                                Orientation="Horizontal"
+                                Spacing="10">
+                                <Image
+                                    Source="small_karma.png"
+                                    WidthRequest="30"
+                                    HeightRequest="30"
+                                    VerticalOptions="Center" />
+                                <Label
+                                    Text="+ 200"
+                                    Style="{StaticResource BoldText}"
+                                    FontSize="20"
+                                    VerticalOptions="Center" />
+                            </StackLayout>
+                        </StackLayout>
+
+                        <Label
+                            Grid.Column="2"
+                            Text="21.06.2022, 12:08"
+                            Style="{StaticResource RegularText}"
+                            FontSize="16"
+                            VerticalOptions="Center" />
 
                     </Grid>
                 </Frame>

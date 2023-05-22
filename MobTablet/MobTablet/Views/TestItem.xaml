@@ -1,65 +1,224 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobTablet.Views.TestItem">
-  <ContentView.Content>
-        <StackLayout Spacing="32" Orientation="Vertical" Margin="0, 0, 20, 0">
-            <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="FillAndExpand" >
-                <Frame WidthRequest="90" HeightRequest="50" VerticalOptions="Center" Margin="0" Padding="0" CornerRadius="180" HasShadow="False" BackgroundColor="Transparent" BorderColor="#1E1584">
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MobTablet.Views.TestItem">
+    <ContentView.Content>
+        <StackLayout
+            Spacing="32"
+            Orientation="Vertical"
+            Margin="0, 0, 20, 0">
+            <StackLayout
+                Orientation="Horizontal"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand">
+                <Frame
+                    WidthRequest="90"
+                    HeightRequest="50"
+                    VerticalOptions="Center"
+                    Margin="0"
+                    Padding="0"
+                    CornerRadius="180"
+                    HasShadow="False"
+                    BackgroundColor="Transparent"
+                    BorderColor="#1E1584">
                     <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_5" />
+                        <TapGestureRecognizer
+                            Tapped="TapGestureRecognizer_Tapped_5" />
                     </Frame.GestureRecognizers>
-                    <Image Source="back" Margin="32, 16, 32, 16" WidthRequest="16" HeightRequest="16" HorizontalOptions="Center"/>
+                    <Image
+                        Source="back"
+                        Margin="32, 16, 32, 16"
+                        WidthRequest="16"
+                        HeightRequest="16"
+                        HorizontalOptions="Center" />
                 </Frame>
-                <Label VerticalTextAlignment="Center" VerticalOptions="Center" Text="Тест Герчикова" Style="{StaticResource BoldText}" FontSize="32" Margin="28, 0, 0, 0" />
-                <Image Source="star" WidthRequest="30" HeightRequest="30"/>
-                <Label HorizontalOptions="EndAndExpand"  Text="09:57" Style="{StaticResource BoldText}" FontSize="32" Margin="0, 0, 32, 0" />
+                <Label
+                    VerticalTextAlignment="Center"
+                    VerticalOptions="Center"
+                    Text="Тест Герчикова"
+                    Style="{StaticResource BoldText}"
+                    FontSize="32"
+                    Margin="28, 0, 0, 0" />
+                <Image
+                    Source="star"
+                    WidthRequest="30"
+                    HeightRequest="30" />
+                <Label
+                    HorizontalOptions="EndAndExpand"
+                    Text="09:57"
+                    Style="{StaticResource BoldText}"
+                    FontSize="32"
+                    Margin="0, 0, 32, 0" />
             </StackLayout>
-         
-            <Frame CornerRadius="12" Background="{StaticResource blockGradient}" Padding="20, 0, 20, 0" HasShadow="False" VerticalOptions="FillAndExpand">
-                <ScrollView VerticalScrollBarVisibility="Never" Padding="0, 40, 0, 40">
-                    <StackLayout Spacing="40">
-                        <StackLayout Orientation="Horizontal" VerticalOptions="Start">
-                            <Label Text="Что Вы больше всего цените в своей работе?" Style="{StaticResource MediumText}" FontSize="20" VerticalOptions="Center" />
-                            <Frame WidthRequest="90" HeightRequest="50" HorizontalOptions="EndAndExpand" VerticalOptions="Center" Margin="0" Padding="0" CornerRadius="180" HasShadow="False" BackgroundColor="Transparent" BorderColor="#1E1584">
-                                <Label Text="1/10" Style="{StaticResource MediumText}" FontSize="20" HorizontalOptions="Center" VerticalOptions="Center"/>
+
+            <Frame
+                CornerRadius="12"
+                Background="{StaticResource blockGradient}"
+                Padding="20, 0, 20, 0"
+                HasShadow="False"
+                VerticalOptions="FillAndExpand">
+                <ScrollView
+                    VerticalScrollBarVisibility="Never"
+                    Padding="0, 40, 0, 40">
+                    <StackLayout
+                        Spacing="40">
+                        <StackLayout
+                            Orientation="Horizontal"
+                            VerticalOptions="Start">
+                            <Label
+                                Text="Что Вы больше всего цените в своей работе?"
+                                Style="{StaticResource MediumText}"
+                                FontSize="20"
+                                VerticalOptions="Center" />
+                            <Frame
+                                WidthRequest="90"
+                                HeightRequest="50"
+                                HorizontalOptions="EndAndExpand"
+                                VerticalOptions="Center"
+                                Margin="0"
+                                Padding="0"
+                                CornerRadius="180"
+                                HasShadow="False"
+                                BackgroundColor="Transparent"
+                                BorderColor="#1E1584">
+                                <Label
+                                    Text="1/10"
+                                    Style="{StaticResource MediumText}"
+                                    FontSize="20"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center" />
                             </Frame>
                         </StackLayout>
 
                         <StackLayout>
-                            <Frame x:Name="firstFrame" WidthRequest="90" HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="0" Padding="32, 10, 32, 10" CornerRadius="12" HasShadow="False" BackgroundColor="Transparent" BorderColor="#1E1584">
+                            <Frame
+                                x:Name="firstFrame"
+                                WidthRequest="90"
+                                HeightRequest="50"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="Center"
+                                Margin="0"
+                                Padding="32, 10, 32, 10"
+                                CornerRadius="12"
+                                HasShadow="False"
+                                BackgroundColor="Transparent"
+                                BorderColor="#1E1584">
                                 <Frame.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                                    <TapGestureRecognizer
+                                        Tapped="TapGestureRecognizer_Tapped" />
                                 </Frame.GestureRecognizers>
-                                <Label Text="Что я в основном решаю, как и что мне делать" Style="{StaticResource RegularText}" FontSize="16" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Label
+                                    Text="Что я в основном решаю, как и что мне делать"
+                                    Style="{StaticResource RegularText}"
+                                    FontSize="16"
+                                    HorizontalOptions="Start"
+                                    VerticalOptions="Center" />
                             </Frame>
-                            <Frame x:Name="secondFrame" WidthRequest="90" HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="0" Padding="32, 10, 32, 10" CornerRadius="12" HasShadow="False" BackgroundColor="Transparent" BorderColor="#1E1584">
+                            <Frame
+                                x:Name="secondFrame"
+                                WidthRequest="90"
+                                HeightRequest="50"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="Center"
+                                Margin="0"
+                                Padding="32, 10, 32, 10"
+                                CornerRadius="12"
+                                HasShadow="False"
+                                BackgroundColor="Transparent"
+                                BorderColor="#1E1584">
                                 <Frame.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" />
+                                    <TapGestureRecognizer
+                                        Tapped="TapGestureRecognizer_Tapped_1" />
                                 </Frame.GestureRecognizers>
-                                <Label Text="Что она дает мне возможность проявить то, что я знаю и умею" Style="{StaticResource RegularText}" FontSize="16" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Label
+                                    Text="Что она дает мне возможность проявить то, что я знаю и умею"
+                                    Style="{StaticResource RegularText}"
+                                    FontSize="16"
+                                    HorizontalOptions="Start"
+                                    VerticalOptions="Center" />
                             </Frame>
-                            <Frame x:Name="thirdFrame"  WidthRequest="90" HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="0" Padding="32, 10, 32, 10" CornerRadius="12" HasShadow="False" BackgroundColor="Transparent" BorderColor="#1E1584">
+                            <Frame
+                                x:Name="thirdFrame"
+                                WidthRequest="90"
+                                HeightRequest="50"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="Center"
+                                Margin="0"
+                                Padding="32, 10, 32, 10"
+                                CornerRadius="12"
+                                HasShadow="False"
+                                BackgroundColor="Transparent"
+                                BorderColor="#1E1584">
                                 <Frame.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2" />
+                                    <TapGestureRecognizer
+                                        Tapped="TapGestureRecognizer_Tapped_2" />
                                 </Frame.GestureRecognizers>
-                                <Label Text="Что я чувствую себя полезным и нужным" Style="{StaticResource RegularText}" FontSize="16" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Label
+                                    Text="Что я чувствую себя полезным и нужным"
+                                    Style="{StaticResource RegularText}"
+                                    FontSize="16"
+                                    HorizontalOptions="Start"
+                                    VerticalOptions="Center" />
                             </Frame>
-                            <Frame x:Name="fourFrame"  WidthRequest="90" HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="0" Padding="32, 10, 32, 10" CornerRadius="12" HasShadow="False" BackgroundColor="Transparent" BorderColor="#1E1584">
+                            <Frame
+                                x:Name="fourFrame"
+                                WidthRequest="90"
+                                HeightRequest="50"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="Center"
+                                Margin="0"
+                                Padding="32, 10, 32, 10"
+                                CornerRadius="12"
+                                HasShadow="False"
+                                BackgroundColor="Transparent"
+                                BorderColor="#1E1584">
                                 <Frame.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3" />
+                                    <TapGestureRecognizer
+                                        Tapped="TapGestureRecognizer_Tapped_3" />
                                 </Frame.GestureRecognizers>
-                                <Label Text="Что мне за нее хорошо платят" Style="{StaticResource RegularText}" FontSize="16" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Label
+                                    Text="Что мне за нее хорошо платят"
+                                    Style="{StaticResource RegularText}"
+                                    FontSize="16"
+                                    HorizontalOptions="Start"
+                                    VerticalOptions="Center" />
                             </Frame>
-                            <Frame x:Name="fiveFrame" WidthRequest="90" HeightRequest="50" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="0" Padding="32, 10, 32, 10" CornerRadius="12" HasShadow="False" BackgroundColor="Transparent" BorderColor="#1E1584">
+                            <Frame
+                                x:Name="fiveFrame"
+                                WidthRequest="90"
+                                HeightRequest="50"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="Center"
+                                Margin="0"
+                                Padding="32, 10, 32, 10"
+                                CornerRadius="12"
+                                HasShadow="False"
+                                BackgroundColor="Transparent"
+                                BorderColor="#1E1584">
                                 <Frame.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_4" />
+                                    <TapGestureRecognizer
+                                        Tapped="TapGestureRecognizer_Tapped_4" />
                                 </Frame.GestureRecognizers>
-                                <Label Text="Особо ничего не ценю, но эта работа мне хороша знакома и привычна" Style="{StaticResource RegularText}" FontSize="16" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Label
+                                    Text="Особо ничего не ценю, но эта работа мне хороша знакома и привычна"
+                                    Style="{StaticResource RegularText}"
+                                    FontSize="16"
+                                    HorizontalOptions="Start"
+                                    VerticalOptions="Center" />
                             </Frame>
                         </StackLayout>
 
-                        <Button Clicked="Button_Clicked" Text="Далее" Background="{StaticResource blueGradient}" TextTransform="None" FontFamily="noto_sans_regular" TextColor="White" CornerRadius="12" WidthRequest="380" HorizontalOptions="Center"/>  
+                        <Button
+                            Clicked="Button_Clicked"
+                            Text="Далее"
+                            Background="{StaticResource blueGradient}"
+                            TextTransform="None"
+                            FontFamily="noto_sans_regular"
+                            TextColor="White"
+                            CornerRadius="12"
+                            WidthRequest="380"
+                            HorizontalOptions="Center" />
 
                     </StackLayout>
                 </ScrollView>

@@ -2,7 +2,7 @@
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
-              xmlns:local="clr-namespace:MobTablet.CustomControls"
+             xmlns:local="clr-namespace:MobTablet.CustomControls"
              xmlns:control="clr-namespace:ProgressRingControl.Forms.Plugin;assembly=ProgressRing.Forms.Plugin"
              x:Class="MobTablet.App">
     <Application.Resources>
@@ -36,6 +36,7 @@
             <GradientStop Color="#FF1D45" Offset="1"/>
         </LinearGradientBrush>
 
+        
         <Style x:Key="menuButtonStyle" TargetType="Button">
             <Setter Property="BackgroundColor" Value="#E1DFFE" />
             <Setter Property="TextColor" Value="#524E7D" />

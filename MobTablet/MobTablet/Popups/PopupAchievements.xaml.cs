@@ -16,5 +16,10 @@ namespace MobTablet.Popups
         {
             InitializeComponent();
         }
+
+        private void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            this.Dismiss(null);
+        }
     }
 }

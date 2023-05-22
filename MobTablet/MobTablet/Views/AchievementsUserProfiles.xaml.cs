@@ -19,7 +19,7 @@ namespace MobTablet.Views
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            var frameData = App.Current.MainPage.FindByName<Frame>("achievementsFrame");
+            var frameData = Parent.FindByName<Frame>("achievementsFrame");
             AchievementsUserList achievementsUserList = new AchievementsUserList();
             frameData.Content = achievementsUserList;
         }

@@ -33,11 +33,13 @@ namespace MobTablet.Views
 
             MyListView.ItemsSource = profileRaitings;
             MyListView.ItemTapped += MyListView_ItemTapped;
+            MyListView.Effects.Add(Effect.Resolve("MyEffects.ListViewHighlightEffect"));
         }
 
         private void MyListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            var frameData = App.Current.MainPage.FindByName<Frame>("myFrameMain");
+            var frameData = Parent.FindByName<Frame>("myFrameMain");
+            //App.Current.MainPage.FindByName<Frame>("myFrameMain");
             SelectProfile selectProfile = new SelectProfile();
             frameData.Content = selectProfile;
         }

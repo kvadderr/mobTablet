@@ -1,109 +1,356 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobTablet.Views.AchievementsUserProfiles">
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MobTablet.Views.AchievementsUserProfiles">
     <ContentView.Content>
-        <StackLayout Padding="0" Spacing="40">
-            <FlexLayout Wrap="Wrap" Direction="Row" AlignContent="SpaceEvenly"  AlignItems="Center" Padding="26">
-                <StackLayout Margin="10, 10, 10, 20" Padding="0, 40, 0, 0" Orientation="Horizontal" WidthRequest="260" >
+        <StackLayout
+            Padding="0"
+            Spacing="40">
+            <FlexLayout
+                Wrap="Wrap"
+                Direction="Row"
+                AlignContent="SpaceEvenly"
+                AlignItems="Center"
+                Padding="26">
+                <StackLayout
+                    Margin="10, 10, 10, 20"
+                    Padding="0, 40, 0, 0"
+                    Orientation="Horizontal"
+                    WidthRequest="260">
                     <StackLayout.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                        <TapGestureRecognizer
+                            Tapped="TapGestureRecognizer_Tapped" />
                     </StackLayout.GestureRecognizers>
-                    <Image Source="Avatar.png" Grid.RowSpan="2" WidthRequest="86" HeightRequest="86"/>
-                    <StackLayout VerticalOptions="Center" Margin="10, 0, 0, 0">
-                        <Label Text="Мария Иванова, 21 год" Style="{StaticResource BoldText}" FontSize="16" />
-                        <Label Text="Официант" FontAttributes="Bold" FontFamily="noto_sans_regular" VerticalTextAlignment="Center"/>
+                    <Image
+                        Source="Avatar.png"
+                        Grid.RowSpan="2"
+                        WidthRequest="86"
+                        HeightRequest="86" />
+                    <StackLayout
+                        VerticalOptions="Center"
+                        Margin="10, 0, 0, 0">
+                        <Label
+                            Text="Мария Иванова, 21 год"
+                            Style="{StaticResource BoldText}"
+                            FontSize="16" />
+                        <Label
+                            Text="Официант"
+                            FontAttributes="Bold"
+                            FontFamily="noto_sans_regular"
+                            VerticalTextAlignment="Center" />
                     </StackLayout>
                 </StackLayout>
-                <StackLayout Margin="10, 10, 10, 20" Padding="0, 40, 0, 0" Orientation="Horizontal" WidthRequest="260">
-                    <Image Source="Avatar.png" Grid.RowSpan="2" WidthRequest="86" HeightRequest="86"/>
-                    <StackLayout VerticalOptions="Center" Margin="10, 0, 0, 0">
-                        <Label Text="Мария Иванова, 21 год" Style="{StaticResource BoldText}" FontSize="16" />
-                        <Label Text="Официант" FontAttributes="Bold" FontFamily="noto_sans_regular" VerticalTextAlignment="Center"/>
+                <StackLayout
+                    Margin="10, 10, 10, 20"
+                    Padding="0, 40, 0, 0"
+                    Orientation="Horizontal"
+                    WidthRequest="260">
+                    <Image
+                        Source="Avatar.png"
+                        Grid.RowSpan="2"
+                        WidthRequest="86"
+                        HeightRequest="86" />
+                    <StackLayout
+                        VerticalOptions="Center"
+                        Margin="10, 0, 0, 0">
+                        <Label
+                            Text="Мария Иванова, 21 год"
+                            Style="{StaticResource BoldText}"
+                            FontSize="16" />
+                        <Label
+                            Text="Официант"
+                            FontAttributes="Bold"
+                            FontFamily="noto_sans_regular"
+                            VerticalTextAlignment="Center" />
                     </StackLayout>
                 </StackLayout>
-                <StackLayout Margin="10, 10, 10, 20" Padding="0, 40, 0, 0" Orientation="Horizontal" WidthRequest="260">
-                    <Image Source="Avatar.png" Grid.RowSpan="2" WidthRequest="86" HeightRequest="86"/>
-                    <StackLayout VerticalOptions="Center" Margin="10, 0, 0, 0">
-                        <Label Text="Мария Иванова, 21 год" Style="{StaticResource BoldText}" FontSize="16" />
-                        <Label Text="Официант" FontAttributes="Bold" FontFamily="noto_sans_regular" VerticalTextAlignment="Center"/>
+                <StackLayout
+                    Margin="10, 10, 10, 20"
+                    Padding="0, 40, 0, 0"
+                    Orientation="Horizontal"
+                    WidthRequest="260">
+                    <Image
+                        Source="Avatar.png"
+                        Grid.RowSpan="2"
+                        WidthRequest="86"
+                        HeightRequest="86" />
+                    <StackLayout
+                        VerticalOptions="Center"
+                        Margin="10, 0, 0, 0">
+                        <Label
+                            Text="Мария Иванова, 21 год"
+                            Style="{StaticResource BoldText}"
+                            FontSize="16" />
+                        <Label
+                            Text="Официант"
+                            FontAttributes="Bold"
+                            FontFamily="noto_sans_regular"
+                            VerticalTextAlignment="Center" />
                     </StackLayout>
                 </StackLayout>
-                <StackLayout Margin="10, 10, 10, 20" Padding="0, 40, 0, 0" Orientation="Horizontal" WidthRequest="260">
-                    <Image Source="Avatar.png" Grid.RowSpan="2" WidthRequest="86" HeightRequest="86"/>
-                    <StackLayout VerticalOptions="Center" Margin="10, 0, 0, 0">
-                        <Label Text="Мария Иванова, 21 год" Style="{StaticResource BoldText}" FontSize="16" />
-                        <Label Text="Официант" FontAttributes="Bold" FontFamily="noto_sans_regular" VerticalTextAlignment="Center"/>
+                <StackLayout
+                    Margin="10, 10, 10, 20"
+                    Padding="0, 40, 0, 0"
+                    Orientation="Horizontal"
+                    WidthRequest="260">
+                    <Image
+                        Source="Avatar.png"
+                        Grid.RowSpan="2"
+                        WidthRequest="86"
+                        HeightRequest="86" />
+                    <StackLayout
+                        VerticalOptions="Center"
+                        Margin="10, 0, 0, 0">
+                        <Label
+                            Text="Мария Иванова, 21 год"
+                            Style="{StaticResource BoldText}"
+                            FontSize="16" />
+                        <Label
+                            Text="Официант"
+                            FontAttributes="Bold"
+                            FontFamily="noto_sans_regular"
+                            VerticalTextAlignment="Center" />
                     </StackLayout>
                 </StackLayout>
-                <StackLayout Margin="10, 10, 10, 20" Padding="0, 40, 0, 0" Orientation="Horizontal" WidthRequest="260">
-                    <Image Source="Avatar.png" Grid.RowSpan="2" WidthRequest="86" HeightRequest="86"/>
-                    <StackLayout VerticalOptions="Center" Margin="10, 0, 0, 0">
-                        <Label Text="Мария Иванова, 21 год" Style="{StaticResource BoldText}" FontSize="16" />
-                        <Label Text="Официант" FontAttributes="Bold" FontFamily="noto_sans_regular" VerticalTextAlignment="Center"/>
+                <StackLayout
+                    Margin="10, 10, 10, 20"
+                    Padding="0, 40, 0, 0"
+                    Orientation="Horizontal"
+                    WidthRequest="260">
+                    <Image
+                        Source="Avatar.png"
+                        Grid.RowSpan="2"
+                        WidthRequest="86"
+                        HeightRequest="86" />
+                    <StackLayout
+                        VerticalOptions="Center"
+                        Margin="10, 0, 0, 0">
+                        <Label
+                            Text="Мария Иванова, 21 год"
+                            Style="{StaticResource BoldText}"
+                            FontSize="16" />
+                        <Label
+                            Text="Официант"
+                            FontAttributes="Bold"
+                            FontFamily="noto_sans_regular"
+                            VerticalTextAlignment="Center" />
                     </StackLayout>
                 </StackLayout>
-                <StackLayout Margin="10, 10, 10, 20" Padding="0, 40, 0, 0" Orientation="Horizontal" WidthRequest="260">
-                    <Image Source="Avatar.png" Grid.RowSpan="2" WidthRequest="86" HeightRequest="86"/>
-                    <StackLayout VerticalOptions="Center" Margin="10, 0, 0, 0">
-                        <Label Text="Мария Иванова, 21 год" Style="{StaticResource BoldText}" FontSize="16" />
-                        <Label Text="Официант" FontAttributes="Bold" FontFamily="noto_sans_regular" VerticalTextAlignment="Center"/>
+                <StackLayout
+                    Margin="10, 10, 10, 20"
+                    Padding="0, 40, 0, 0"
+                    Orientation="Horizontal"
+                    WidthRequest="260">
+                    <Image
+                        Source="Avatar.png"
+                        Grid.RowSpan="2"
+                        WidthRequest="86"
+                        HeightRequest="86" />
+                    <StackLayout
+                        VerticalOptions="Center"
+                        Margin="10, 0, 0, 0">
+                        <Label
+                            Text="Мария Иванова, 21 год"
+                            Style="{StaticResource BoldText}"
+                            FontSize="16" />
+                        <Label
+                            Text="Официант"
+                            FontAttributes="Bold"
+                            FontFamily="noto_sans_regular"
+                            VerticalTextAlignment="Center" />
                     </StackLayout>
                 </StackLayout>
-                <StackLayout Margin="10, 10, 10, 20" Padding="0, 40, 0, 0" Orientation="Horizontal" WidthRequest="260">
-                    <Image Source="Avatar.png" Grid.RowSpan="2" WidthRequest="86" HeightRequest="86"/>
-                    <StackLayout VerticalOptions="Center" Margin="10, 0, 0, 0">
-                        <Label Text="Мария Иванова, 21 год" Style="{StaticResource BoldText}" FontSize="16" />
-                        <Label Text="Официант" FontAttributes="Bold" FontFamily="noto_sans_regular" VerticalTextAlignment="Center"/>
+                <StackLayout
+                    Margin="10, 10, 10, 20"
+                    Padding="0, 40, 0, 0"
+                    Orientation="Horizontal"
+                    WidthRequest="260">
+                    <Image
+                        Source="Avatar.png"
+                        Grid.RowSpan="2"
+                        WidthRequest="86"
+                        HeightRequest="86" />
+                    <StackLayout
+                        VerticalOptions="Center"
+                        Margin="10, 0, 0, 0">
+                        <Label
+                            Text="Мария Иванова, 21 год"
+                            Style="{StaticResource BoldText}"
+                            FontSize="16" />
+                        <Label
+                            Text="Официант"
+                            FontAttributes="Bold"
+                            FontFamily="noto_sans_regular"
+                            VerticalTextAlignment="Center" />
                     </StackLayout>
                 </StackLayout>
-                <StackLayout Margin="10, 10, 10, 20" Padding="0, 40, 0, 0" Orientation="Horizontal" WidthRequest="260">
-                    <Image Source="Avatar.png" Grid.RowSpan="2" WidthRequest="86" HeightRequest="86"/>
-                    <StackLayout VerticalOptions="Center" Margin="10, 0, 0, 0">
-                        <Label Text="Мария Иванова, 21 год" Style="{StaticResource BoldText}" FontSize="16" />
-                        <Label Text="Официант" FontAttributes="Bold" FontFamily="noto_sans_regular" VerticalTextAlignment="Center"/>
+                <StackLayout
+                    Margin="10, 10, 10, 20"
+                    Padding="0, 40, 0, 0"
+                    Orientation="Horizontal"
+                    WidthRequest="260">
+                    <Image
+                        Source="Avatar.png"
+                        Grid.RowSpan="2"
+                        WidthRequest="86"
+                        HeightRequest="86" />
+                    <StackLayout
+                        VerticalOptions="Center"
+                        Margin="10, 0, 0, 0">
+                        <Label
+                            Text="Мария Иванова, 21 год"
+                            Style="{StaticResource BoldText}"
+                            FontSize="16" />
+                        <Label
+                            Text="Официант"
+                            FontAttributes="Bold"
+                            FontFamily="noto_sans_regular"
+                            VerticalTextAlignment="Center" />
                     </StackLayout>
                 </StackLayout>
-                <StackLayout Margin="10, 10, 10, 20" Padding="0, 40, 0, 0" Orientation="Horizontal" WidthRequest="260">
-                    <Image Source="Avatar.png" Grid.RowSpan="2" WidthRequest="86" HeightRequest="86"/>
-                    <StackLayout VerticalOptions="Center" Margin="10, 0, 0, 0">
-                        <Label Text="Мария Иванова, 21 год" Style="{StaticResource BoldText}" FontSize="16" />
-                        <Label Text="Официант" FontAttributes="Bold" FontFamily="noto_sans_regular" VerticalTextAlignment="Center"/>
+                <StackLayout
+                    Margin="10, 10, 10, 20"
+                    Padding="0, 40, 0, 0"
+                    Orientation="Horizontal"
+                    WidthRequest="260">
+                    <Image
+                        Source="Avatar.png"
+                        Grid.RowSpan="2"
+                        WidthRequest="86"
+                        HeightRequest="86" />
+                    <StackLayout
+                        VerticalOptions="Center"
+                        Margin="10, 0, 0, 0">
+                        <Label
+                            Text="Мария Иванова, 21 год"
+                            Style="{StaticResource BoldText}"
+                            FontSize="16" />
+                        <Label
+                            Text="Официант"
+                            FontAttributes="Bold"
+                            FontFamily="noto_sans_regular"
+                            VerticalTextAlignment="Center" />
                     </StackLayout>
                 </StackLayout>
-                <StackLayout Margin="10, 10, 10, 20" Padding="0, 40, 0, 0" Orientation="Horizontal" WidthRequest="260">
-                    <Image Source="Avatar.png" Grid.RowSpan="2" WidthRequest="86" HeightRequest="86"/>
-                    <StackLayout VerticalOptions="Center" Margin="10, 0, 0, 0">
-                        <Label Text="Мария Иванова, 21 год" Style="{StaticResource BoldText}" FontSize="16" />
-                        <Label Text="Официант" FontAttributes="Bold" FontFamily="noto_sans_regular" VerticalTextAlignment="Center"/>
+                <StackLayout
+                    Margin="10, 10, 10, 20"
+                    Padding="0, 40, 0, 0"
+                    Orientation="Horizontal"
+                    WidthRequest="260">
+                    <Image
+                        Source="Avatar.png"
+                        Grid.RowSpan="2"
+                        WidthRequest="86"
+                        HeightRequest="86" />
+                    <StackLayout
+                        VerticalOptions="Center"
+                        Margin="10, 0, 0, 0">
+                        <Label
+                            Text="Мария Иванова, 21 год"
+                            Style="{StaticResource BoldText}"
+                            FontSize="16" />
+                        <Label
+                            Text="Официант"
+                            FontAttributes="Bold"
+                            FontFamily="noto_sans_regular"
+                            VerticalTextAlignment="Center" />
                     </StackLayout>
                 </StackLayout>
-                <StackLayout Margin="10, 10, 10, 20" Padding="0, 40, 0, 0" Orientation="Horizontal" WidthRequest="260">
-                    <Image Source="Avatar.png" Grid.RowSpan="2" WidthRequest="86" HeightRequest="86"/>
-                    <StackLayout VerticalOptions="Center" Margin="10, 0, 0, 0">
-                        <Label Text="Мария Иванова, 21 год" Style="{StaticResource BoldText}" FontSize="16" />
-                        <Label Text="Официант" FontAttributes="Bold" FontFamily="noto_sans_regular" VerticalTextAlignment="Center"/>
+                <StackLayout
+                    Margin="10, 10, 10, 20"
+                    Padding="0, 40, 0, 0"
+                    Orientation="Horizontal"
+                    WidthRequest="260">
+                    <Image
+                        Source="Avatar.png"
+                        Grid.RowSpan="2"
+                        WidthRequest="86"
+                        HeightRequest="86" />
+                    <StackLayout
+                        VerticalOptions="Center"
+                        Margin="10, 0, 0, 0">
+                        <Label
+                            Text="Мария Иванова, 21 год"
+                            Style="{StaticResource BoldText}"
+                            FontSize="16" />
+                        <Label
+                            Text="Официант"
+                            FontAttributes="Bold"
+                            FontFamily="noto_sans_regular"
+                            VerticalTextAlignment="Center" />
                     </StackLayout>
                 </StackLayout>
-                <StackLayout Margin="10, 10, 10, 20" Padding="0, 40, 0, 0" Orientation="Horizontal" WidthRequest="260">
-                    <Image Source="Avatar.png" Grid.RowSpan="2" WidthRequest="86" HeightRequest="86"/>
-                    <StackLayout VerticalOptions="Center" Margin="10, 0, 0, 0">
-                        <Label Text="Мария Иванова, 21 год" Style="{StaticResource BoldText}" FontSize="16" />
-                        <Label Text="Официант" FontAttributes="Bold" FontFamily="noto_sans_regular" VerticalTextAlignment="Center"/>
+                <StackLayout
+                    Margin="10, 10, 10, 20"
+                    Padding="0, 40, 0, 0"
+                    Orientation="Horizontal"
+                    WidthRequest="260">
+                    <Image
+                        Source="Avatar.png"
+                        Grid.RowSpan="2"
+                        WidthRequest="86"
+                        HeightRequest="86" />
+                    <StackLayout
+                        VerticalOptions="Center"
+                        Margin="10, 0, 0, 0">
+                        <Label
+                            Text="Мария Иванова, 21 год"
+                            Style="{StaticResource BoldText}"
+                            FontSize="16" />
+                        <Label
+                            Text="Официант"
+                            FontAttributes="Bold"
+                            FontFamily="noto_sans_regular"
+                            VerticalTextAlignment="Center" />
                     </StackLayout>
                 </StackLayout>
-                <StackLayout Margin="10, 10, 10, 20" Padding="0, 40, 0, 0" Orientation="Horizontal" WidthRequest="260">
-                    <Image Source="Avatar.png" Grid.RowSpan="2" WidthRequest="86" HeightRequest="86"/>
-                    <StackLayout VerticalOptions="Center" Margin="10, 0, 0, 0">
-                        <Label Text="Мария Иванова, 21 год" Style="{StaticResource BoldText}" FontSize="16" />
-                        <Label Text="Официант" FontAttributes="Bold" FontFamily="noto_sans_regular" VerticalTextAlignment="Center"/>
+                <StackLayout
+                    Margin="10, 10, 10, 20"
+                    Padding="0, 40, 0, 0"
+                    Orientation="Horizontal"
+                    WidthRequest="260">
+                    <Image
+                        Source="Avatar.png"
+                        Grid.RowSpan="2"
+                        WidthRequest="86"
+                        HeightRequest="86" />
+                    <StackLayout
+                        VerticalOptions="Center"
+                        Margin="10, 0, 0, 0">
+                        <Label
+                            Text="Мария Иванова, 21 год"
+                            Style="{StaticResource BoldText}"
+                            FontSize="16" />
+                        <Label
+                            Text="Официант"
+                            FontAttributes="Bold"
+                            FontFamily="noto_sans_regular"
+                            VerticalTextAlignment="Center" />
                     </StackLayout>
                 </StackLayout>
-                <StackLayout Margin="10, 10, 10, 20" Padding="0, 40, 0, 0" Orientation="Horizontal" WidthRequest="260">
-                    <Image Source="Avatar.png" Grid.RowSpan="2" WidthRequest="86" HeightRequest="86"/>
-                    <StackLayout VerticalOptions="Center" Margin="10, 0, 0, 0">
-                        <Label Text="Мария Иванова, 21 год" Style="{StaticResource BoldText}" FontSize="16" />
-                        <Label Text="Официант" FontAttributes="Bold" FontFamily="noto_sans_regular" VerticalTextAlignment="Center"/>
+                <StackLayout
+                    Margin="10, 10, 10, 20"
+                    Padding="0, 40, 0, 0"
+                    Orientation="Horizontal"
+                    WidthRequest="260">
+                    <Image
+                        Source="Avatar.png"
+                        Grid.RowSpan="2"
+                        WidthRequest="86"
+                        HeightRequest="86" />
+                    <StackLayout
+                        VerticalOptions="Center"
+                        Margin="10, 0, 0, 0">
+                        <Label
+                            Text="Мария Иванова, 21 год"
+                            Style="{StaticResource BoldText}"
+                            FontSize="16" />
+                        <Label
+                            Text="Официант"
+                            FontAttributes="Bold"
+                            FontFamily="noto_sans_regular"
+                            VerticalTextAlignment="Center" />
                     </StackLayout>
                 </StackLayout>
             </FlexLayout>

@@ -33,7 +33,7 @@ namespace MobTablet.Views
             };
             MyListView.ItemsSource = activeGoals;
             MyListView.ItemTapped += MyListView_ItemTapped;
-
+            MyListView.Effects.Add(Effect.Resolve("MyEffects.ListViewHighlightEffect"));
         }
 
         private void MyListView_ItemTapped(object sender, ItemTappedEventArgs e)

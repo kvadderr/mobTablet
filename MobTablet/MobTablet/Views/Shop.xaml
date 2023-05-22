@@ -1,109 +1,341 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobTablet.Views.Shop">
-  <ContentView.Content>
-        <StackLayout Spacing="32" Orientation="Vertical" Margin="0, 0, 20, 0">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" >
-                <Label Text="Магазин подарков" Style="{StaticResource BoldText}" FontSize="40" Margin="28, 0, 0, 0" />
-                <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="EndAndExpand" VerticalOptions="Center">
-                    <Image Source="small_coin.png" />
-                    <Label Text="1346" FontSize="20" Style="{StaticResource BoldText}" />
-                    <BoxView WidthRequest="1"  Color="#524E7D" VerticalOptions="FillAndExpand" />
-                    <StackLayout Orientation="Horizontal" Padding="0, 0, 20, 0" Spacing="10">
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MobTablet.Views.Shop">
+    <ContentView.Content>
+        <StackLayout
+            Spacing="32"
+            Orientation="Vertical"
+            Margin="0, 0, 20, 0">
+            <StackLayout
+                Orientation="Horizontal"
+                HorizontalOptions="FillAndExpand">
+                <Label
+                    Text="Магазин подарков"
+                    Style="{StaticResource BoldText}"
+                    FontSize="40"
+                    Margin="28, 0, 0, 0" />
+                <StackLayout
+                    Orientation="Horizontal"
+                    Spacing="20"
+                    HorizontalOptions="EndAndExpand"
+                    VerticalOptions="Center">
+                    <Image
+                        Source="small_coin.png" />
+                    <Label
+                        Text="1346"
+                        FontSize="20"
+                        Style="{StaticResource BoldText}" />
+                    <BoxView
+                        WidthRequest="1"
+                        Color="#524E7D"
+                        VerticalOptions="FillAndExpand" />
+                    <StackLayout
+                        Orientation="Horizontal"
+                        Padding="0, 0, 20, 0"
+                        Spacing="10">
                         <StackLayout.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1"/>
+                            <TapGestureRecognizer
+                                Tapped="TapGestureRecognizer_Tapped_1" />
                         </StackLayout.GestureRecognizers>
-                        <Image Source="track" />
-                        <Label Text="Мои заказы" VerticalOptions="Center" TextDecorations="Underline" FontSize="16" Style="{StaticResource RegularText}" />
+                        <Image
+                            Source="track" />
+                        <Label
+                            Text="Мои заказы"
+                            VerticalOptions="Center"
+                            TextDecorations="Underline"
+                            FontSize="16"
+                            Style="{StaticResource RegularText}" />
                     </StackLayout>
                 </StackLayout>
 
             </StackLayout>
-            <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
-                <StackLayout Orientation="Horizontal" Spacing="20"  Margin="28, 0, 0, 0">
-                    <Button Text="Новое" FontSize="Body" Style="{StaticResource menuButtonStyle}" CornerRadius="12" />
-                    <Button Text="Еда"   FontSize="Body" Style="{StaticResource menuButtonStyle}" CornerRadius="12"/>
-                    <Button Text="Обучение"   FontSize="Body" Style="{StaticResource menuButtonStyle}" CornerRadius="12"/>
-                    <Button Text="Одежда" TextTransform="None" FontSize="Body" Background="{StaticResource blueGradient}" TextColor="White" FontFamily="noto_sans_regular" CornerRadius="12"/>
-                    <Button Text="От Босса"   FontSize="Body" Style="{StaticResource menuButtonStyle}" CornerRadius="12"/>
-                    <Button Text="Развлечения"   FontSize="Body" Style="{StaticResource menuButtonStyle}" CornerRadius="12"/>
-                    <Button Text="Штуки"   FontSize="Body" Style="{StaticResource menuButtonStyle}" CornerRadius="12"/>
-                    <Button Text="Электроника"   FontSize="Body" Style="{StaticResource menuButtonStyle}" CornerRadius="12"/>
+            <ScrollView
+                Orientation="Horizontal"
+                HorizontalScrollBarVisibility="Never">
+                <StackLayout
+                    Orientation="Horizontal"
+                    Spacing="20"
+                    Margin="28, 0, 0, 0">
+                    <Button
+                        Text="Новое"
+                        FontSize="Body"
+                        Style="{StaticResource menuButtonStyle}"
+                        CornerRadius="12" />
+                    <Button
+                        Text="Еда"
+                        FontSize="Body"
+                        Style="{StaticResource menuButtonStyle}"
+                        CornerRadius="12" />
+                    <Button
+                        Text="Обучение"
+                        FontSize="Body"
+                        Style="{StaticResource menuButtonStyle}"
+                        CornerRadius="12" />
+                    <Button
+                        Text="Одежда"
+                        TextTransform="None"
+                        FontSize="Body"
+                        Background="{StaticResource blueGradient}"
+                        TextColor="White"
+                        FontFamily="noto_sans_regular"
+                        CornerRadius="12" />
+                    <Button
+                        Text="От Босса"
+                        FontSize="Body"
+                        Style="{StaticResource menuButtonStyle}"
+                        CornerRadius="12" />
+                    <Button
+                        Text="Развлечения"
+                        FontSize="Body"
+                        Style="{StaticResource menuButtonStyle}"
+                        CornerRadius="12" />
+                    <Button
+                        Text="Штуки"
+                        FontSize="Body"
+                        Style="{StaticResource menuButtonStyle}"
+                        CornerRadius="12" />
+                    <Button
+                        Text="Электроника"
+                        FontSize="Body"
+                        Style="{StaticResource menuButtonStyle}"
+                        CornerRadius="12" />
                 </StackLayout>
             </ScrollView>
-            <Frame CornerRadius="12" Background="{StaticResource blockGradient}" Padding="20, 40, 20, 0" HasShadow="False" VerticalOptions="FillAndExpand">
+            <Frame
+                CornerRadius="12"
+                Background="{StaticResource blockGradient}"
+                Padding="20, 40, 20, 0"
+                HasShadow="False"
+                VerticalOptions="FillAndExpand">
                 <ScrollView>
-                    <FlexLayout Wrap="Wrap" Direction="Row" AlignContent="SpaceBetween" AlignItems="Center">
-                        <Frame Margin="10, 10, 10, 20" Padding="0, 40, 0, 0" BackgroundColor="White" WidthRequest="285" CornerRadius="12" HasShadow="True" >
+                    <FlexLayout
+                        Wrap="Wrap"
+                        Direction="Row"
+                        AlignContent="SpaceBetween"
+                        AlignItems="Center">
+                        <Frame
+                            Margin="10, 10, 10, 20"
+                            Padding="0, 40, 0, 0"
+                            BackgroundColor="White"
+                            WidthRequest="285"
+                            CornerRadius="12"
+                            HasShadow="True">
                             <Frame.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                <TapGestureRecognizer
+                                    Tapped="TapGestureRecognizer_Tapped" />
                             </Frame.GestureRecognizers>
-                            <StackLayout Orientation="Vertical" Spacing="12" Padding="0">
-                                <Label Text="Фирменная футболка “Koffein”" FontSize="20" Style="{StaticResource MediumText}" HorizontalTextAlignment="Center"/>
-                                <Image Source="Tshirt.png" WidthRequest="200" HeightRequest="200"/>
-                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                                    <Image Source="small_coin.png" />
-                                    <Label Text="1346" FontSize="20" Style="{StaticResource BoldText}" />
+                            <StackLayout
+                                Orientation="Vertical"
+                                Spacing="12"
+                                Padding="0">
+                                <Label
+                                    Text="Фирменная футболка “Koffein”"
+                                    FontSize="20"
+                                    Style="{StaticResource MediumText}"
+                                    HorizontalTextAlignment="Center" />
+                                <Image
+                                    Source="Tshirt.png"
+                                    WidthRequest="200"
+                                    HeightRequest="200" />
+                                <StackLayout
+                                    Orientation="Horizontal"
+                                    HorizontalOptions="Center">
+                                    <Image
+                                        Source="small_coin.png" />
+                                    <Label
+                                        Text="1346"
+                                        FontSize="20"
+                                        Style="{StaticResource BoldText}" />
                                 </StackLayout>
-                                <Frame Background="{StaticResource blueGradient}" Margin="0" VerticalOptions="EndAndExpand">
-                                    <Label Text="Хочу" TextColor="White" Style="{StaticResource MediumText}" FontSize="20" HorizontalTextAlignment="Center"/>
+                                <Frame
+                                    Background="{StaticResource blueGradient}"
+                                    Margin="0"
+                                    VerticalOptions="EndAndExpand">
+                                    <Label
+                                        Text="Хочу"
+                                        TextColor="White"
+                                        Style="{StaticResource MediumText}"
+                                        FontSize="20"
+                                        HorizontalTextAlignment="Center" />
                                 </Frame>
                             </StackLayout>
                         </Frame>
 
-                        <Frame Margin="10, 10, 10, 20" Padding="0, 40, 0, 0" BackgroundColor="White" WidthRequest="285" CornerRadius="12" HasShadow="True" >
-                            <StackLayout Orientation="Vertical" Spacing="12" Padding="0">
-                                <Label Text="Фирменная футболка “Koffein”" FontSize="20" Style="{StaticResource MediumText}" HorizontalTextAlignment="Center"/>
-                                <Image Source="Tshirt.png" WidthRequest="200" HeightRequest="200"/>
-                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                                    <Image Source="small_coin.png" />
-                                    <Label Text="1346" FontSize="20" Style="{StaticResource BoldText}" />
+                        <Frame
+                            Margin="10, 10, 10, 20"
+                            Padding="0, 40, 0, 0"
+                            BackgroundColor="White"
+                            WidthRequest="285"
+                            CornerRadius="12"
+                            HasShadow="True">
+                            <StackLayout
+                                Orientation="Vertical"
+                                Spacing="12"
+                                Padding="0">
+                                <Label
+                                    Text="Фирменная футболка “Koffein”"
+                                    FontSize="20"
+                                    Style="{StaticResource MediumText}"
+                                    HorizontalTextAlignment="Center" />
+                                <Image
+                                    Source="Tshirt.png"
+                                    WidthRequest="200"
+                                    HeightRequest="200" />
+                                <StackLayout
+                                    Orientation="Horizontal"
+                                    HorizontalOptions="Center">
+                                    <Image
+                                        Source="small_coin.png" />
+                                    <Label
+                                        Text="1346"
+                                        FontSize="20"
+                                        Style="{StaticResource BoldText}" />
                                 </StackLayout>
-                                <Frame Background="{StaticResource blueGradient}" Margin="0" VerticalOptions="EndAndExpand">
-                                    <Label Text="Хочу" TextColor="White" Style="{StaticResource MediumText}" FontSize="20" HorizontalTextAlignment="Center"/>
+                                <Frame
+                                    Background="{StaticResource blueGradient}"
+                                    Margin="0"
+                                    VerticalOptions="EndAndExpand">
+                                    <Label
+                                        Text="Хочу"
+                                        TextColor="White"
+                                        Style="{StaticResource MediumText}"
+                                        FontSize="20"
+                                        HorizontalTextAlignment="Center" />
                                 </Frame>
                             </StackLayout>
                         </Frame>
 
-                        <Frame Margin="10, 10, 10, 20" Padding="0, 40, 0, 0" BackgroundColor="White" WidthRequest="285" CornerRadius="12" HasShadow="True" >
-                            <StackLayout Orientation="Vertical" Spacing="12" Padding="0">
-                                <Label Text="Фирменная кепка “Koffein”" WidthRequest="170" FontSize="20" Style="{StaticResource MediumText}" HorizontalTextAlignment="Center"/>
-                                <Image Source="kepka.png" WidthRequest="200" HeightRequest="200"/>
-                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                                    <Image Source="small_coin.png" />
-                                    <Label Text="1346" FontSize="20" Style="{StaticResource BoldText}" />
+                        <Frame
+                            Margin="10, 10, 10, 20"
+                            Padding="0, 40, 0, 0"
+                            BackgroundColor="White"
+                            WidthRequest="285"
+                            CornerRadius="12"
+                            HasShadow="True">
+                            <StackLayout
+                                Orientation="Vertical"
+                                Spacing="12"
+                                Padding="0">
+                                <Label
+                                    Text="Фирменная кепка “Koffein”"
+                                    WidthRequest="170"
+                                    FontSize="20"
+                                    Style="{StaticResource MediumText}"
+                                    HorizontalTextAlignment="Center" />
+                                <Image
+                                    Source="kepka.png"
+                                    WidthRequest="200"
+                                    HeightRequest="200" />
+                                <StackLayout
+                                    Orientation="Horizontal"
+                                    HorizontalOptions="Center">
+                                    <Image
+                                        Source="small_coin.png" />
+                                    <Label
+                                        Text="1346"
+                                        FontSize="20"
+                                        Style="{StaticResource BoldText}" />
                                 </StackLayout>
-                                <Frame Background="{StaticResource blueGradient}" Margin="0" VerticalOptions="EndAndExpand">
-                                    <Label Text="Копить" TextColor="#FDCB02" Style="{StaticResource MediumText}" FontSize="20" HorizontalTextAlignment="Center"/>
+                                <Frame
+                                    Background="{StaticResource blueGradient}"
+                                    Margin="0"
+                                    VerticalOptions="EndAndExpand">
+                                    <Label
+                                        Text="Копить"
+                                        TextColor="#FDCB02"
+                                        Style="{StaticResource MediumText}"
+                                        FontSize="20"
+                                        HorizontalTextAlignment="Center" />
                                 </Frame>
                             </StackLayout>
                         </Frame>
 
-                        <Frame Margin="10, 10, 10, 20" Padding="0, 40, 0, 0" BackgroundColor="White" WidthRequest="285" CornerRadius="12" HasShadow="True" >
-                            <StackLayout Orientation="Vertical" Spacing="12" Padding="0">
-                                <Label Text="Фирменная футболка “Koffein”" FontSize="20" Style="{StaticResource MediumText}" HorizontalTextAlignment="Center"/>
-                                <Image Source="Tshirt.png" WidthRequest="200" HeightRequest="200"/>
-                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                                    <Image Source="small_coin.png" />
-                                    <Label Text="1346" FontSize="20" Style="{StaticResource BoldText}" />
+                        <Frame
+                            Margin="10, 10, 10, 20"
+                            Padding="0, 40, 0, 0"
+                            BackgroundColor="White"
+                            WidthRequest="285"
+                            CornerRadius="12"
+                            HasShadow="True">
+                            <StackLayout
+                                Orientation="Vertical"
+                                Spacing="12"
+                                Padding="0">
+                                <Label
+                                    Text="Фирменная футболка “Koffein”"
+                                    FontSize="20"
+                                    Style="{StaticResource MediumText}"
+                                    HorizontalTextAlignment="Center" />
+                                <Image
+                                    Source="Tshirt.png"
+                                    WidthRequest="200"
+                                    HeightRequest="200" />
+                                <StackLayout
+                                    Orientation="Horizontal"
+                                    HorizontalOptions="Center">
+                                    <Image
+                                        Source="small_coin.png" />
+                                    <Label
+                                        Text="1346"
+                                        FontSize="20"
+                                        Style="{StaticResource BoldText}" />
                                 </StackLayout>
-                                <Frame Background="{StaticResource blueGradient}" Margin="0" VerticalOptions="EndAndExpand">
-                                    <Label Text="Хочу" TextColor="White" Style="{StaticResource MediumText}" FontSize="20" HorizontalTextAlignment="Center"/>
+                                <Frame
+                                    Background="{StaticResource blueGradient}"
+                                    Margin="0"
+                                    VerticalOptions="EndAndExpand">
+                                    <Label
+                                        Text="Хочу"
+                                        TextColor="White"
+                                        Style="{StaticResource MediumText}"
+                                        FontSize="20"
+                                        HorizontalTextAlignment="Center" />
                                 </Frame>
                             </StackLayout>
                         </Frame>
 
-                        <Frame Margin="10, 10, 10, 20" Padding="0, 40, 0, 0" BackgroundColor="White" WidthRequest="285" CornerRadius="12" HasShadow="True" >
-                            <StackLayout Orientation="Vertical" Spacing="12" Padding="0">
-                                <Label Text="Фирменная футболка “Koffein”" FontSize="20" Style="{StaticResource MediumText}" HorizontalTextAlignment="Center"/>
-                                <Image Source="Tshirt.png" WidthRequest="200" HeightRequest="200"/>
-                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                                    <Image Source="small_coin.png" />
-                                    <Label Text="1346" FontSize="20" Style="{StaticResource BoldText}" />
+                        <Frame
+                            Margin="10, 10, 10, 20"
+                            Padding="0, 40, 0, 0"
+                            BackgroundColor="White"
+                            WidthRequest="285"
+                            CornerRadius="12"
+                            HasShadow="True">
+                            <StackLayout
+                                Orientation="Vertical"
+                                Spacing="12"
+                                Padding="0">
+                                <Label
+                                    Text="Фирменная футболка “Koffein”"
+                                    FontSize="20"
+                                    Style="{StaticResource MediumText}"
+                                    HorizontalTextAlignment="Center" />
+                                <Image
+                                    Source="Tshirt.png"
+                                    WidthRequest="200"
+                                    HeightRequest="200" />
+                                <StackLayout
+                                    Orientation="Horizontal"
+                                    HorizontalOptions="Center">
+                                    <Image
+                                        Source="small_coin.png" />
+                                    <Label
+                                        Text="1346"
+                                        FontSize="20"
+                                        Style="{StaticResource BoldText}" />
                                 </StackLayout>
-                                <Frame Background="{StaticResource blueGradient}" Margin="0" VerticalOptions="EndAndExpand">
-                                    <Label Text="Хочу" TextColor="White" Style="{StaticResource MediumText}" FontSize="20" HorizontalTextAlignment="Center"/>
+                                <Frame
+                                    Background="{StaticResource blueGradient}"
+                                    Margin="0"
+                                    VerticalOptions="EndAndExpand">
+                                    <Label
+                                        Text="Хочу"
+                                        TextColor="White"
+                                        Style="{StaticResource MediumText}"
+                                        FontSize="20"
+                                        HorizontalTextAlignment="Center" />
                                 </Frame>
                             </StackLayout>
                         </Frame>
@@ -112,9 +344,9 @@
                     </FlexLayout>
                 </ScrollView>
             </Frame>
-            
+
         </StackLayout>
 
-       
+
     </ContentView.Content>
 </ContentView>

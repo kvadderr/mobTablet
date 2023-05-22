@@ -1,53 +1,133 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:MobTablet.CustomControls"
-             x:Class="MobTablet.Views.Home">
-  <ContentView.Content>
-        <Grid VerticalOptions="FillAndExpand" Margin="0,0,0,20">
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MobTablet.CustomControls"
+    x:Class="MobTablet.Views.Home">
+    <ContentView.Content>
+        <Grid
+            VerticalOptions="FillAndExpand"
+            Margin="0,0,0,20">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="2*" />
-                <ColumnDefinition Width="1*" />
+                <ColumnDefinition
+                    Width="2*" />
+                <ColumnDefinition
+                    Width="1*" />
             </Grid.ColumnDefinitions>
-            
+
             <!-- Блок 2 -->
-            <StackLayout Grid.Column="0">
-                <Frame Padding="0" x:Name="myFrame" BackgroundColor="Transparent"/>
+            <StackLayout
+                Grid.Column="0">
+                <Frame
+                    Padding="0"
+                    x:Name="myFrame"
+                    BackgroundColor="Transparent" />
             </StackLayout>
 
             <!-- Блок 3 -->
-            <StackLayout Grid.Column="1" VerticalOptions="FillAndExpand" BackgroundColor="Transparent" Spacing="20">
+            <StackLayout
+                Grid.Column="1"
+                VerticalOptions="FillAndExpand"
+                BackgroundColor="Transparent"
+                Spacing="20">
                 <ScrollView>
-                    <StackLayout Spacing="20" Margin="0, 0, 0, 20">
-                        <Frame Margin="20, 0, 20, 0" Padding="0, 40, 0, 0" Background="{StaticResource blockGradient}" CornerRadius="12" HasShadow="False">
-                            <StackLayout Orientation="Vertical" Spacing="12" Padding="0">
+                    <StackLayout
+                        Spacing="20"
+                        Margin="0, 0, 0, 20">
+                        <Frame
+                            Margin="20, 0, 20, 0"
+                            Padding="0, 40, 0, 0"
+                            Background="{StaticResource blockGradient}"
+                            CornerRadius="12"
+                            HasShadow="False">
+                            <StackLayout
+                                Orientation="Vertical"
+                                Spacing="12"
+                                Padding="0">
                                 <StackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="openPopupContest" />
+                                    <TapGestureRecognizer
+                                        Tapped="openPopupContest" />
                                 </StackLayout.GestureRecognizers>
-                                <Label Text="Общая карма" FontSize="20" Style="{StaticResource MediumText}" HorizontalTextAlignment="Center"/>
-                                <Label Margin="10, 0, 10, 0" Text="Koffein, г. Нальчик, ул. Ленина 145" FontSize="16" Style="{StaticResource RegularText}" HorizontalTextAlignment="Center"/>
-                                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="12" Margin="0, 16, 0, 14">
-                                    <Image Source="Karma.png" />
-                                    <Label Text="2300" FontSize="40" Style="{StaticResource BoldText}" HorizontalTextAlignment="Center"/>
+                                <Label
+                                    Text="Общая карма"
+                                    FontSize="20"
+                                    Style="{StaticResource MediumText}"
+                                    HorizontalTextAlignment="Center" />
+                                <Label
+                                    Margin="10, 0, 10, 0"
+                                    Text="Koffein, г. Нальчик, ул. Ленина 145"
+                                    FontSize="16"
+                                    Style="{StaticResource RegularText}"
+                                    HorizontalTextAlignment="Center" />
+                                <StackLayout
+                                    Orientation="Horizontal"
+                                    HorizontalOptions="Center"
+                                    Spacing="12"
+                                    Margin="0, 16, 0, 14">
+                                    <Image
+                                        Source="Karma.png" />
+                                    <Label
+                                        Text="2300"
+                                        FontSize="40"
+                                        Style="{StaticResource BoldText}"
+                                        HorizontalTextAlignment="Center" />
                                 </StackLayout>
-                                <Frame Background="{StaticResource blueGradient}" Margin="0" VerticalOptions="EndAndExpand">
-                                    <Label Text="Конкурс месяца" FontSize="20" Style="{StaticResource MediumText}" TextColor="White" HorizontalTextAlignment="Center"/>
+                                <Frame
+                                    Background="{StaticResource blueGradient}"
+                                    Margin="0"
+                                    VerticalOptions="EndAndExpand">
+                                    <Label
+                                        Text="Конкурс месяца"
+                                        FontSize="20"
+                                        Style="{StaticResource MediumText}"
+                                        TextColor="White"
+                                        HorizontalTextAlignment="Center" />
                                 </Frame>
                             </StackLayout>
                         </Frame>
-                        <Frame Margin="20, 0, 20, 0" Padding="0, 40, 0, 0" Background="{StaticResource blockGradient}" CornerRadius="12" HasShadow="False">
-                            <StackLayout Orientation="Vertical" Spacing="12" Padding="0">
-                                <Label Text="Коплю на футболку" FontSize="20" Style="{StaticResource MediumText}" HorizontalTextAlignment="Center"/>
-                                <Image Source="Tshirt.png" />
-                                <Frame Background="{StaticResource blueGradient}" Margin="0" VerticalOptions="EndAndExpand">
-                                    <StackLayout Orientation="Horizontal" BackgroundColor="Blue">
-                                        <Image Source="small_coin" />
-                                        <StackLayout Padding="0" HorizontalOptions="CenterAndExpand">
-                                            <StackLayout Orientation="Horizontal" BackgroundColor="Black">
-                                                <Label Text="Собрано" TextColor="White"/>
-                                                <Label Text="141/324" TextColor="White" HorizontalTextAlignment="End"/>
+                        <Frame
+                            Margin="20, 0, 20, 0"
+                            Padding="0, 40, 0, 0"
+                            Background="{StaticResource blockGradient}"
+                            CornerRadius="12"
+                            HasShadow="False">
+                            <StackLayout
+                                Orientation="Vertical"
+                                Spacing="12"
+                                Padding="0">
+                                <Label
+                                    Text="Коплю на футболку"
+                                    FontSize="20"
+                                    Style="{StaticResource MediumText}"
+                                    HorizontalTextAlignment="Center" />
+                                <Image
+                                    Source="Tshirt.png" />
+                                <Frame
+                                    Background="{StaticResource blueGradient}"
+                                    Margin="0"
+                                    VerticalOptions="EndAndExpand">
+                                    <StackLayout
+                                        Orientation="Horizontal"
+                                        BackgroundColor="Blue">
+                                        <Image
+                                            Source="small_coin" />
+                                        <StackLayout
+                                            Padding="0"
+                                            HorizontalOptions="CenterAndExpand">
+                                            <StackLayout
+                                                Orientation="Horizontal"
+                                                BackgroundColor="Black">
+                                                <Label
+                                                    Text="Собрано"
+                                                    TextColor="White" />
+                                                <Label
+                                                    Text="141/324"
+                                                    TextColor="White"
+                                                    HorizontalTextAlignment="End" />
                                             </StackLayout>
-                                            <ProgressBar Progress="0.6" MinimumHeightRequest="20"/>
+                                            <ProgressBar
+                                                Progress="0.6"
+                                                MinimumHeightRequest="20" />
                                         </StackLayout>
                                     </StackLayout>
                                 </Frame>

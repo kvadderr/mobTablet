@@ -1,41 +1,126 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MobTablet.Views.TestResult">
-  <ContentView.Content>
-        <StackLayout Spacing="32" Orientation="Vertical" Margin="0, 0, 20, 0">
-            <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="FillAndExpand" >
-                <Label VerticalTextAlignment="Center" VerticalOptions="Center" Text="Тест Герчикова" Style="{StaticResource BoldText}" FontSize="32" Margin="28, 0, 0, 0" />
-                <Image Source="star" WidthRequest="30" HeightRequest="30"/>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MobTablet.Views.TestResult">
+    <ContentView.Content>
+        <StackLayout
+            Spacing="32"
+            Orientation="Vertical"
+            Margin="0, 0, 20, 0">
+            <StackLayout
+                Orientation="Horizontal"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand">
+                <Label
+                    VerticalTextAlignment="Center"
+                    VerticalOptions="Center"
+                    Text="Тест Герчикова"
+                    Style="{StaticResource BoldText}"
+                    FontSize="32"
+                    Margin="28, 0, 0, 0" />
+                <Image
+                    Source="star"
+                    WidthRequest="30"
+                    HeightRequest="30" />
             </StackLayout>
-         
-            <Frame CornerRadius="12" Background="{StaticResource blockGradient}" Padding="100, 20, 100, 20" HasShadow="False" VerticalOptions="FillAndExpand">
-                <ScrollView VerticalScrollBarVisibility="Never">
-                    <StackLayout Spacing="50">
-                        <Frame WidthRequest="90" HeightRequest="50" VerticalOptions="Start" HorizontalOptions="End" Margin="0" Padding="0" CornerRadius="180" HasShadow="False" BackgroundColor="Transparent" BorderColor="#1E1584">
-                            <Image Source="close" Margin="32, 16, 32, 16" WidthRequest="16" HeightRequest="16" HorizontalOptions="Center"/>
+
+            <Frame
+                CornerRadius="12"
+                Background="{StaticResource blockGradient}"
+                Padding="100, 20, 100, 20"
+                HasShadow="False"
+                VerticalOptions="FillAndExpand">
+                <ScrollView
+                    VerticalScrollBarVisibility="Never">
+                    <StackLayout
+                        Spacing="50">
+                        <Frame
+                            WidthRequest="90"
+                            HeightRequest="50"
+                            VerticalOptions="Start"
+                            HorizontalOptions="End"
+                            Margin="0"
+                            Padding="0"
+                            CornerRadius="180"
+                            HasShadow="False"
+                            BackgroundColor="Transparent"
+                            BorderColor="#1E1584">
+                            <Image
+                                Source="close"
+                                Margin="32, 16, 32, 16"
+                                WidthRequest="16"
+                                HeightRequest="16"
+                                HorizontalOptions="Center" />
                         </Frame>
 
-                        <Label Text="Ваш результат" Style="{StaticResource MediumText}" FontSize="32" HorizontalTextAlignment="Center"/>
+                        <Label
+                            Text="Ваш результат"
+                            Style="{StaticResource MediumText}"
+                            FontSize="32"
+                            HorizontalTextAlignment="Center" />
                         <StackLayout>
-                            <Label Text="Инструментальный тип" HorizontalTextAlignment="Center" Style="{StaticResource RegularText}" FontSize="16" />
-                            <ProgressBar ProgressColor="Brown" Progress="0.6" WidthRequest="350" HorizontalOptions="Center"/>
+                            <Label
+                                Text="Инструментальный тип"
+                                HorizontalTextAlignment="Center"
+                                Style="{StaticResource RegularText}"
+                                FontSize="16" />
+                            <ProgressBar
+                                ProgressColor="Brown"
+                                Progress="0.6"
+                                WidthRequest="350"
+                                HorizontalOptions="Center" />
 
-                            <Label Text="Профессиональный тип" HorizontalTextAlignment="Center" Style="{StaticResource RegularText}" FontSize="16" />
-                            <ProgressBar ProgressColor="Red" Progress="0.6" WidthRequest="350" HorizontalOptions="Center"/>
+                            <Label
+                                Text="Профессиональный тип"
+                                HorizontalTextAlignment="Center"
+                                Style="{StaticResource RegularText}"
+                                FontSize="16" />
+                            <ProgressBar
+                                ProgressColor="Red"
+                                Progress="0.6"
+                                WidthRequest="350"
+                                HorizontalOptions="Center" />
 
-                            <Label Text="Патриотичесский тип" HorizontalTextAlignment="Center" Style="{StaticResource RegularText}" FontSize="16" />
-                            <ProgressBar ProgressColor="Orange" Progress="0.6" WidthRequest="350" HorizontalOptions="Center"/>
+                            <Label
+                                Text="Патриотичесский тип"
+                                HorizontalTextAlignment="Center"
+                                Style="{StaticResource RegularText}"
+                                FontSize="16" />
+                            <ProgressBar
+                                ProgressColor="Orange"
+                                Progress="0.6"
+                                WidthRequest="350"
+                                HorizontalOptions="Center" />
 
-                            <Label Text="Хозяйский тип" HorizontalTextAlignment="Center" Style="{StaticResource RegularText}" FontSize="16" />
-                            <ProgressBar ProgressColor="Black" Progress="0.6" WidthRequest="350" HorizontalOptions="Center"/>
+                            <Label
+                                Text="Хозяйский тип"
+                                HorizontalTextAlignment="Center"
+                                Style="{StaticResource RegularText}"
+                                FontSize="16" />
+                            <ProgressBar
+                                ProgressColor="Black"
+                                Progress="0.6"
+                                WidthRequest="350"
+                                HorizontalOptions="Center" />
 
-                            <Label Text="Люмпизированный тип" HorizontalTextAlignment="Center" Style="{StaticResource RegularText}" FontSize="16" />
-                            <ProgressBar ProgressColor="Purple" Progress="0.6" WidthRequest="350" HorizontalOptions="Center"/>
+                            <Label
+                                Text="Люмпизированный тип"
+                                HorizontalTextAlignment="Center"
+                                Style="{StaticResource RegularText}"
+                                FontSize="16" />
+                            <ProgressBar
+                                ProgressColor="Purple"
+                                Progress="0.6"
+                                WidthRequest="350"
+                                HorizontalOptions="Center" />
 
                         </StackLayout>
-                        <Label Text="Равным образом, реализация намеченных плановых заданий говорит о возможностях вывода текущих активов. А также независимые государства представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. А ещё интерактивные прототипы указаны как претенденты на роль ключевых факторов."
-                           Style="{StaticResource RegularText}" FontSize="16" HorizontalTextAlignment="Center" />
+                        <Label
+                            Text="Равным образом, реализация намеченных плановых заданий говорит о возможностях вывода текущих активов. А также независимые государства представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу. А ещё интерактивные прототипы указаны как претенденты на роль ключевых факторов."
+                            Style="{StaticResource RegularText}"
+                            FontSize="16"
+                            HorizontalTextAlignment="Center" />
 
                     </StackLayout>
                 </ScrollView>

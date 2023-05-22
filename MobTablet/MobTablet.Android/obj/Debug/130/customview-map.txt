@@ -33,6 +33,7 @@ item;obj\Debug\130\res\drawable\chart.xml
 LinearLayout;C:\Users\Msoul\source\repos\MobTablet\MobTablet\MobTablet.Android\obj\Debug\130\lp\57\jl\res\layout\bottomtablayout.xml
 path;obj\Debug\130\res\drawable\back.xml
 path;obj\Debug\130\res\drawable\chart.xml
+path;obj\Debug\130\res\drawable\chartactive.xml
 path;obj\Debug\130\res\drawable\clock.xml
 path;obj\Debug\130\res\drawable\close.xml
 path;obj\Debug\130\res\drawable\close_white.xml
@@ -40,6 +41,8 @@ path;obj\Debug\130\res\drawable\down.xml
 path;obj\Debug\130\res\drawable\erase.xml
 path;obj\Debug\130\res\drawable\filter.xml
 path;obj\Debug\130\res\drawable\mail.xml
+path;obj\Debug\130\res\drawable\profile.xml
+path;obj\Debug\130\res\drawable\profileactive.xml
 path;obj\Debug\130\res\drawable\question.xml
 path;obj\Debug\130\res\drawable\readable.xml
 path;obj\Debug\130\res\drawable\search.xml
@@ -70,6 +73,7 @@ translate;C:\Users\Msoul\source\repos\MobTablet\MobTablet\MobTablet.Android\obj\
 translate;C:\Users\Msoul\source\repos\MobTablet\MobTablet\MobTablet.Android\obj\Debug\130\lp\57\jl\res\anim\exittoright.xml
 vector;obj\Debug\130\res\drawable\back.xml
 vector;obj\Debug\130\res\drawable\chart.xml
+vector;obj\Debug\130\res\drawable\chartactive.xml
 vector;obj\Debug\130\res\drawable\clock.xml
 vector;obj\Debug\130\res\drawable\close.xml
 vector;obj\Debug\130\res\drawable\close_white.xml
@@ -77,6 +81,8 @@ vector;obj\Debug\130\res\drawable\down.xml
 vector;obj\Debug\130\res\drawable\erase.xml
 vector;obj\Debug\130\res\drawable\filter.xml
 vector;obj\Debug\130\res\drawable\mail.xml
+vector;obj\Debug\130\res\drawable\profile.xml
+vector;obj\Debug\130\res\drawable\profileactive.xml
 vector;obj\Debug\130\res\drawable\question.xml
 vector;obj\Debug\130\res\drawable\readable.xml
 vector;obj\Debug\130\res\drawable\search.xml

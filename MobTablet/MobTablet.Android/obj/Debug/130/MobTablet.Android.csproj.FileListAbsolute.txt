@@ -709,3 +709,9 @@ C:\Users\Msoul\source\repos\MobTablet\MobTablet\MobTablet.Android\obj\Debug\130\
 C:\Users\Msoul\source\repos\MobTablet\MobTablet\MobTablet.Android\obj\Debug\130\res\drawable\empty.png
 C:\Users\Msoul\source\repos\MobTablet\MobTablet\MobTablet.Android\obj\Debug\130\res\drawable\send_message.xml
 C:\Users\Msoul\source\repos\MobTablet\MobTablet\MobTablet.Android\obj\Debug\130\res\drawable\search.xml
+C:\Users\Msoul\source\repos\MobTablet\MobTablet\MobTablet.Android\obj\Debug\130\res\drawable\profile.xml
+C:\Users\Msoul\source\repos\MobTablet\MobTablet\MobTablet.Android\obj\Debug\130\res\drawable\profileactive.xml
+C:\Users\Msoul\source\repos\MobTablet\MobTablet\MobTablet.Android\obj\Debug\130\res\drawable\chartactive.xml
+C:\Users\Msoul\source\repos\MobTablet\MobTablet\MobTablet.Android\obj\Debug\130\android\src\crc641707af00a904e913\CustomEditorRenderer.java
+C:\Users\Msoul\source\repos\MobTablet\MobTablet\MobTablet.Android\obj\Debug\130\android\src\crc641707af00a904e913\CustomEntryRenderer.java
+C:\Users\Msoul\source\repos\MobTablet\MobTablet\MobTablet.Android\obj\Debug\130\android\src\crc641707af00a904e913\TouchableFrameRenderer.java

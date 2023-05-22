@@ -20,7 +20,25 @@ namespace MobTablet {
         private global::Xamarin.Forms.StackLayout MenuStackLayout;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::MobTablet.CustomControls.MenuButton profileBtn;
+        private global::MobTablet.CustomControls.CustomMenuButton homeBtn;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::MobTablet.CustomControls.CustomMenuButton profileBtn;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::MobTablet.CustomControls.CustomMenuButton achievementsBtn;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::MobTablet.CustomControls.CustomMenuButton raitingBtn;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::MobTablet.CustomControls.CustomMenuButton testBtn;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::MobTablet.CustomControls.CustomMenuButton libraryBtn;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::MobTablet.CustomControls.CustomMenuButton shopBtn;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Frame myFrameMain;
@@ -29,7 +47,13 @@ namespace MobTablet {
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
             MenuStackLayout = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "MenuStackLayout");
-            profileBtn = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::MobTablet.CustomControls.MenuButton>(this, "profileBtn");
+            homeBtn = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::MobTablet.CustomControls.CustomMenuButton>(this, "homeBtn");
+            profileBtn = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::MobTablet.CustomControls.CustomMenuButton>(this, "profileBtn");
+            achievementsBtn = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::MobTablet.CustomControls.CustomMenuButton>(this, "achievementsBtn");
+            raitingBtn = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::MobTablet.CustomControls.CustomMenuButton>(this, "raitingBtn");
+            testBtn = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::MobTablet.CustomControls.CustomMenuButton>(this, "testBtn");
+            libraryBtn = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::MobTablet.CustomControls.CustomMenuButton>(this, "libraryBtn");
+            shopBtn = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::MobTablet.CustomControls.CustomMenuButton>(this, "shopBtn");
             myFrameMain = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Frame>(this, "myFrameMain");
         }
     }

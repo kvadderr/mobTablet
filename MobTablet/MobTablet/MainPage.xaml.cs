@@ -9,72 +9,82 @@ using MobTablet.Views;
 using Xamarin.CommunityToolkit.Extensions;
 using MobTablet.Popups;
 using Xamarin.CommunityToolkit.UI.Views;
+using MobTablet.CustomControls;
 
 namespace MobTablet
 {
     public partial class MainPage : ContentPage
     {
+        CustomMenuButton pressedCustomMenuButton;
 
         public MainPage()
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-            Home home = new Home();
-            Profile profile = new Profile();
-            Achievements achievements = new Achievements();
+            
+            homeBtn.OnPressed();
 
-            myFrameMain.Content = home;
+            homeBtn.PressedAction = () =>
+            {
+                goToNormalState();
+                pressedCustomMenuButton = homeBtn;
+                Home home = new Home();
+                myFrameMain.Content = home;
+            };
 
+            profileBtn.PressedAction = () =>
+            {
+                goToNormalState();
+                pressedCustomMenuButton = profileBtn;
+                Profile profile = new Profile();
+                myFrameMain.Content = profile;
+            };
+            achievementsBtn.PressedAction = () =>
+            {
+                goToNormalState();
+                pressedCustomMenuButton = achievementsBtn;
+                Achievements achievements = new Achievements();
+                myFrameMain.Content = achievements;
+            };
+            raitingBtn.PressedAction = () =>
+            {
+                goToNormalState();
+                pressedCustomMenuButton = raitingBtn;
+                Raiting raiting = new Raiting();
+                myFrameMain.Content = raiting;
+            };
+            testBtn.PressedAction = () =>
+            {
+                goToNormalState();
+                pressedCustomMenuButton = testBtn;
+                Test test = new Test();
+                myFrameMain.Content = test;
+            };
+            libraryBtn.PressedAction = () =>
+            {
+                goToNormalState();
+                pressedCustomMenuButton = libraryBtn;
+                Library library = new Library();
+                myFrameMain.Content = library;
+            };
+            shopBtn.PressedAction = () =>
+            {
+                goToNormalState();
+                pressedCustomMenuButton = shopBtn;
+                Shop shop = new Shop();
+                myFrameMain.Content = shop;
+            };
+
+        }
+
+        private void goToNormalState()
+        {
+           if (pressedCustomMenuButton != null)  pressedCustomMenuButton.normalState();
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
-        }
-
-        private void goToHome(object sender, EventArgs e)
-        {
-            Home home = new Home();
-            myFrameMain.Content = home;
-        }
-
-        private void goToAchievements(object sender, EventArgs e)
-        {
-            Achievements achievements = new Achievements();
-            myFrameMain.Content = achievements;
-        }
-
-        private void goToProfile(object sender, EventArgs e)
-        {
-            VisualStateManager.GoToState(profileBtn, "Pressed");
-            Profile profile = new Profile();
-            myFrameMain.Content = profile;
-        }
-
-        private void goToRaiting(object sender, EventArgs e)
-        {
-            VisualStateManager.GoToState(profileBtn, "Pressed");
-            Raiting raiting = new Raiting();
-            myFrameMain.Content = raiting;
-        }
-
-        private void goToLibrary(object sender, EventArgs e)
-        {
-            VisualStateManager.GoToState(profileBtn, "Pressed");
-            Library library = new Library();
-            myFrameMain.Content = library;
-        }
-
-        private void goToShop(object sender, EventArgs e)
-        {
-            Shop shop = new Shop();
-            myFrameMain.Content = shop;
-        }
-        
-        private void goToTest(object sender, EventArgs e)
-        {
-            Test test = new Test();
-            myFrameMain.Content = test;
         }
 
         private void ImageButton_Clicked(object sender, EventArgs e)
